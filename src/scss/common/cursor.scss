@@ -1,0 +1,21 @@
+.cursor-move {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: $colorBlue;
+  border-radius: 100%;
+  transform: scale(0);
+  pointer-events: none;
+  z-index: -1;
+}
+
+//  {
+//   // display: inline-block;
+//   display: flex;
+//   flex-direction: column;
+//   position: relative;
+//   z-index: 100;
+// }

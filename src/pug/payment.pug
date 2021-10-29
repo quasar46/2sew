@@ -1,0 +1,67 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header.pug
+
+        .wrapper
+
+            .breadcrumbs.container 
+                ul.breadcrumbs__list.content-size3
+                    li 
+                        a(href="index.html") Главная
+                    li 
+                        img(src="img/arrow-breadcrumbs.svg" alt="Стрелка")
+                    li 
+                        a.breadcrumbs__current Доставка и оплата
+
+            .payment.container.inner 
+                .inner__picture 
+                    h2.inner__title Доставка и оплата
+                    img(src="img/inner-pictures/payment.png" alt="")
+                .container__min
+                    h2.inner__title.inner__title--mode Доставка и оплата
+                .container__min.tabs 
+                    .payment__caption.content-size2.tabs__caption 
+                        .tabs__wrapper
+                            p.active Доставка <i></i>
+                            p Оплата <i></i>
+                    .payment__content.tabs__content.active
+                        .payment__block
+                            p.payment__title.title-sub.btn-toggle 
+                                span Транспортная компания «GTD», «ПЭК», «Энергия» 
+                                <svg class="minus " width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12.9707" r="11.5" transform="rotate(90 12 12.9707)" stroke="#826754"/><path d="M6.34315 12.9694L17.6569 12.9694" stroke="#826754" stroke-linecap="round"/></svg>
+                                <svg class="plus current" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12.9707" r="11.5" transform="rotate(90 12 12.9707)" stroke="#826754"/><path d="M11.9986 18.6276L11.9987 7.31385" stroke="#826754" stroke-linecap="round"/><path d="M6.34315 12.9694L17.6569 12.9694" stroke="#826754" stroke-linecap="round"/></svg>
+                            .payment__inner 
+                                .payment__text.text-block.content-size1 
+                                    p Для выбора оплаты товара с помощью банковской карты на соответствующей странице необходимо выбрать вариант оплаты "Банковской картой". Оплата происходит через АО «Тинькофф Банк» с использованием Банковских карт следующих платежных систем:
+                        .payment__block
+                            p.payment__title.title-sub.btn-toggle 
+                                span Почта России
+                                <svg class="minus " width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12.9707" r="11.5" transform="rotate(90 12 12.9707)" stroke="#826754"/><path d="M6.34315 12.9694L17.6569 12.9694" stroke="#826754" stroke-linecap="round"/></svg>
+                                <svg class="plus current" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12.9707" r="11.5" transform="rotate(90 12 12.9707)" stroke="#826754"/><path d="M11.9986 18.6276L11.9987 7.31385" stroke="#826754" stroke-linecap="round"/><path d="M6.34315 12.9694L17.6569 12.9694" stroke="#826754" stroke-linecap="round"/></svg>
+                            .payment__inner 
+                                .payment__text.text-block.content-size1 
+                                    p При выборе данного вида доставки Вы сможете забрать Ваш заказ в ближайшем отделении Почты России. 
+                                    p Срок доставки: составит от нескольких дней до 2 недель в зависимости от удаленности вашего населенного пункта от города Курска. 
+                                    p Стоимость доставки: рассчитывается автоматически ,отображается при оформлении заказа на сайте и включается в стоимость доставки.
+                                    p После отправки заказа на указанный Вами при регистрации на сайте адрес электронной почты придет письмо с трек-номером, с помощью которого на сайте Почты России Вы сможете отслеживать статус посылки. Наш сайт пользуется расчетами сайта Postcalc.RU. Используются расчеты Универсального калькулятора Почты России и EMS postcalc.ru
+                    .payment__content.tabs__content
+                        .payment__block
+                            p.payment__title.title-sub.btn-toggle 
+                                span Оплата заказа банковской картой
+                                <svg class="minus " width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12.9707" r="11.5" transform="rotate(90 12 12.9707)" stroke="#826754"/><path d="M6.34315 12.9694L17.6569 12.9694" stroke="#826754" stroke-linecap="round"/></svg>
+                                <svg class="plus current" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12.9707" r="11.5" transform="rotate(90 12 12.9707)" stroke="#826754"/><path d="M11.9986 18.6276L11.9987 7.31385" stroke="#826754" stroke-linecap="round"/><path d="M6.34315 12.9694L17.6569 12.9694" stroke="#826754" stroke-linecap="round"/></svg>
+                            .payment__inner
+                                .payment__text.text-block.content-size1 
+                                    p Для выбора оплаты товара с помощью банковской карты на соответствующей странице необходимо выбрать вариант оплаты "Банковской картой". Оплата происходит через АО «Тинькофф Банк» с использованием Банковских карт следующих платежных систем:
+                                .payment__brends 
+                                    img(src="img/brends/img1.svg" alt="")
+                                    img(src="img/brends/img2.svg" alt="")
+                                    img(src="img/brends/img3.svg" alt="")
+
+
+
+
+        include modules/footer.pug
+        include modules/script.pug

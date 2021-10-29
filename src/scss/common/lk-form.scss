@@ -1,0 +1,115 @@
+.lk-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 420px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 40px;
+  border-top: 1px solid #826754;
+  border-bottom: 1px solid #826754;
+  @media (max-width: 1919px) {
+    padding: 40px;
+  }
+  @media (max-width: 1023px) {
+    padding: 40px 30px;
+    max-width: 374px;
+  }
+  @media (max-width: 767px) {
+    padding: 0;
+    border: none;
+  }
+}
+
+.lk-form {
+  .title-sub {
+    margin-bottom: 30px;
+    @media (max-width: 1365px) {
+      margin-bottom: 25px;
+    }
+    @media (max-width: 767px) {
+      font-size: 26px;
+    }
+  }
+  input {
+    width: 100%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    // border-bottom: 1px solid #826754;
+    margin-bottom: 30px;
+    padding: 7px 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @media (max-width: 1365px) {
+      margin-bottom: 20px;
+    }
+    @media (max-width: 767px) {
+      padding: 8px 0;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.lk-form__link {
+  text-align: right;
+  align-self: flex-end;
+  margin-left: auto;
+  margin-top: 8px;
+  @media (max-width: 1365px) {
+    margin-bottom: 30px;
+  }
+}
+
+.lk-form__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  // padding: 0 30px;
+  a {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $colorBrown2;
+  }
+  .btn-round {
+    display: flex;
+    min-width: 114px;
+    @media (max-width: 1365px) {
+      min-width: 103px;
+    }
+    @media (max-width: 767px) {
+      margin-right: 30px;
+    }
+  }
+  @media (max-width: 767px) {
+    justify-content: center;
+  }
+}
+
+.lk-form__top {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  @media (max-width: 1919px) {
+    margin-bottom: 30px;
+  }
+  @media (max-width: 1365px) {
+    margin-bottom: 25px;
+  }
+  @media (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+  .title-sub {
+    @media (max-width: 767px) {
+      font-size: 26px;
+    }
+  }
+  input {
+    border-bottom: none;
+  }
+}
+
+.lk__form-text {
+  margin-top: 20px;
+}

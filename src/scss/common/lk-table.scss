@@ -1,0 +1,61 @@
+.lk-table {
+  table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    font-weight: 400;
+    thead {
+      border-top: 1px solid #826754;
+      th {
+        color: $colorBrown2;
+        font-weight: 400;
+        text-align: left;
+        padding: 20px;
+        border-right: 1px solid #826754;
+        &:last-child {
+          border-right: 0;
+        }
+      }
+    }
+    tr {
+      border-bottom: 1px solid #826754;
+    }
+    td {
+      position: relative;
+      padding: 20px;
+      .btn-delete {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        button {
+          padding: 0;
+          border: none;
+        }
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.lk-table__buttons {
+  button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  @media (max-width: 1023px) {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+  @media (max-width: 767px) {
+    justify-content: flex-start;
+  }
+}

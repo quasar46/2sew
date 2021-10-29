@@ -1,0 +1,35 @@
+.card-footer {
+  display: flex;
+  border-top: 1px solid #826754;
+  border-bottom: 1px solid #826754;
+}
+
+.card-footer__col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+  &:first-child {
+    border-right: 1px solid #826754;
+  }
+  @media (max-width: 1919px) {
+    padding: 0 20px;
+  }
+  @media (max-width: 1023px) {
+    padding: 0 10px;
+  }
+}
+
+.card-footer__name {
+  padding: 30px 0;
+  @media (max-width: 1919px) {
+    padding: 20px 0;
+  }
+  @media (max-width: 767px) {
+    padding: 8px 0;
+  }
+}
+
+.card-footer__date {
+  color: $colorBrown2;
+}

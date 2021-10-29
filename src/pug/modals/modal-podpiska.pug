@@ -1,0 +1,21 @@
+.wrapper__modal#podpiska-modal
+    .modal.modal__podpiska
+        button.modal__closed#closed-modal
+            img(src="img/closed-modal.svg" alt="")
+        form.modal__content
+            h2.modal__title.title-sub Подписка на новости
+            fieldset.form
+                .input-container.ic2
+                    input.input-container__input(type='text' placeholder=' ')
+                    .cut
+                    label.placeholder(for='').input-container__label Email
+                .input-container.ic2
+                    input.input-container__input(type='text' placeholder=' ')
+                    .cut
+                    label.placeholder(for='').input-container__label Пароль
+            .modal__text.text-block
+                p Нажимая «Подписаться» , вы подтверждаете, что прочли <a>лицензионное соглашение</a> и даёте согласие на обработку <a>персональных данных</a>
+            .btn-round__wrapper 
+                a(href="").btn-round Подписаться <i></i>
+        .modal__picture.modal__picture--mode 
+            img(src="img/modal/img1.png" alt="")

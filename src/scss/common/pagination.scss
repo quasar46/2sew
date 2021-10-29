@@ -1,0 +1,35 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a {
+    position: relative;
+    margin-right: 25px;
+    &.current {
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 44px;
+        height: 44px;
+        background-color: $colorBlue;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        @media (max-width: 1249px) {
+          width: 40px;
+          height: 40px;
+        }
+        @media (max-width: 767px) {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

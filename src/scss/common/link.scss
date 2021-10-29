@@ -1,0 +1,29 @@
+.btn-round__wrapper {
+  // display: none;
+  display: flex;
+  justify-content: center;
+  @media (max-width: 767px) {
+    display: flex;
+    padding: 19px 25px;
+  }
+}
+
+.link__show-more {
+  display: none;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 30px;
+  button {
+    border: 0;
+    padding: 19px 20px;
+    background-color: $colorBlue;
+    border-radius: 50%;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: $colorBrown2;
+    font-weight: 500;
+  }
+  @media (max-width: 767px) {
+    display: block;
+  }
+}

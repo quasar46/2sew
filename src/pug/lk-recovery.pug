@@ -1,0 +1,40 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header.pug
+
+        .wrapper
+
+            .breadcrumbs.container 
+                ul.breadcrumbs__list.content-size3
+                    li 
+                        a(href="index.html") Главная
+                    li 
+                        img(src="img/arrow-breadcrumbs.svg" alt="Стрелка")
+                    li 
+                        a.breadcrumbs__current Корзина
+            .lk-recovery.container.inner
+                .inner__picture 
+                    h2.inner__title Личный кабинет
+                    img(src="img/inner-pictures/lk.png" alt="")
+
+
+                .lk-form
+                    .lk-form__top.form
+                        h2.title-sub Восстановление пароля
+
+                        .input-container.ic2
+                            input.input(type='text' placeholder=' ')
+                            .cut
+                            label.placeholder(for='') Email
+
+                        p.content-size2.lk__form-text Введите e-mail для сброса пароля, на ваш адрес придет приглашение создать новый пароль.
+                    .lk-form__bottom
+                        .lk-form__bottom.content-size2
+                            a.btn-round Сбросить <i></i>
+
+
+
+        include modules/footer.pug
+        include modules/script.pug

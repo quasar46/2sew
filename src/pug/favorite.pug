@@ -1,0 +1,64 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header.pug
+
+        .wrapper
+            span.cursor-move
+            .breadcrumbs.container 
+                ul.breadcrumbs__list.content-size3
+                    li 
+                        a(href="index.html") Главная
+                    li 
+                        img(src="img/arrow-breadcrumbs.svg" alt="Стрелка")
+                    li 
+                        a.breadcrumbs__current Избранное
+
+            .card.container.inner
+                .inner__caption
+                    h2.title-inner Избранное
+                    a(href="").content-size2 Очистить
+
+                .catalog__list
+                    //- catalog__item 
+                    a.catalog__item.catalog__item--favorite 
+                        .catalog__action-btn.catalog__sale
+                            p 
+                                span 30
+                                i % 
+                        .catalog__action-btn.catalog__like 
+                            <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+                        img.catalog__picture(src="img/catalog/img1.jpg" alt="")
+                        .block-move
+                            p.catalog__name.content-size1 Шифон с цветами
+                            .catalog__bottom
+                                .catalog__price.title-sub
+                                    span 550 ₽
+                                    span.catalog__price--old.content-size2 650 ₽
+                                .catalog__size.content-size2 
+                                    span 1 М
+                            .catalog__bottom.catalog__bottom--basket 
+                                button.add-basket.content-size2 В корзину
+                    //- .catalog__item
+                    a.catalog__item.catalog__item--favorite 
+                        .catalog__action-btn.catalog__like
+                            <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+                        img.catalog__picture(src="img/catalog/img2.jpg" alt="")
+                        .block-move
+                            p.catalog__name.content-size1 Хлопок белый
+                            .catalog__bottom
+                                .catalog__price.title-sub
+                                    span 550 ₽
+                                .catalog__size.content-size2 
+                                    span 1 М
+                            .catalog__bottom.catalog__bottom--basket 
+                                button.add-basket.content-size2 В корзину
+
+
+
+
+
+        include modules/footer.pug
+        include modules/script.pug
+       

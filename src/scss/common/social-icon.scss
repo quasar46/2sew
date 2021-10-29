@@ -1,0 +1,23 @@
+.social-icon {
+  display: flex;
+  flex: 1 0 auto;
+  img {
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  a {
+    margin-right: 15px;
+    &:last-child {
+      margin-right: 0;
+    }
+    @media (max-width: 1023px) {
+      width: 36px;
+      height: 36px;
+    }
+    @media (max-width: 767px) {
+      width: 35px;
+      height: 35px;
+    }
+  }
+}

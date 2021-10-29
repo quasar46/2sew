@@ -1,0 +1,46 @@
+.catalog-sorting {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+  background-color: #fff;
+  min-width: 190px;
+  font-size: 16px;
+  text-transform: none;
+  font-weight: 400;
+}
+
+.catalog-sorting__list {
+  box-shadow: 0px 0px 5px rgba(104, 104, 104, 0.4);
+  border-radius: 5px;
+
+  li {
+    border-bottom: 1px solid #f3ebe8;
+    cursor: pointer;
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+}
+
+.catalog-sorting__item {
+  position: relative;
+  padding: 16px;
+  line-height: 1.2;
+  &.active {
+    padding-left: 34px;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $colorBlue;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

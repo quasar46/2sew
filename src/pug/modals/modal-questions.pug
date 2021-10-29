@@ -1,0 +1,33 @@
+.wrapper__modal
+    .modal.modal__questions
+        button.modal__closed#closed-modal
+            img(src="img/closed-modal.svg" alt="")
+        form.modal__content
+            h2.modal__title.title-sub Остались вопросы?
+            fieldset.form 
+                .input-container.ic2
+                    input.input-container__input(type='text' placeholder=' ')
+                    .cut
+                    label.placeholder(for='').input-container__label Номер телефона
+                .input-container.ic2
+                    input.input-container__input(type='text' placeholder=' ')
+                    .cut
+                    label.placeholder(for='').input-container__label Как к вам обращаться
+                .input-container.ic2
+                    input.input-container__input(type='text' placeholder=' ')
+                    .cut
+                    label.placeholder(for='').input-container__label Как к вам обращаться
+                .input-container.input-container--comment.ic2
+                    textarea.input-container__input(type="text" placeholder=' ')
+                    .cut 
+                    label(for="").placeholder.input-container__label.input-container__label--comment Текст вопроса 
+
+                .modal__text.text-block
+                    p Нажимая «Заказать» , вы подтверждаете, что прочли <a>лицензионное соглашение</a> и даёте согласие на обработку <a>персональных данных</a>
+                .btn-round__wrapper 
+                    .btn-round
+                        input(type="submit" value="Заказать")
+                        i
+        .modal__picture 
+            img(src="img/modal/img2.png" alt="").modal__picture-desctop
+            img(src="img/modal/img2-mobile.png" alt="").modal__picture-mobile

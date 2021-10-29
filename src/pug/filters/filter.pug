@@ -1,0 +1,184 @@
+.filter__open.category-filter-open
+    a.container.filter__back.back-filter
+        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 13L1 7L7 0.999999" stroke="#826754" stroke-linecap="round"/></svg>
+        span Категория
+
+    .filter__send 
+        button Применить
+
+    .filter__clear-all
+        button Сбросить
+
+    .filter__list-open
+        .filter__item.filter__radio-el
+            .filter__show-item.container
+                p Ткани
+
+        .filter__item.filter__radio-el
+            .filter__show-item.container
+                p Фурнитура
+
+        .filter__item.filter__radio-el
+            .filter__show-item.container
+                p Выкройки
+
+.filter__open.type-filter-open
+    a.container.filter__back.back-filter
+        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 13L1 7L7 0.999999" stroke="#826754" stroke-linecap="round"/></svg>
+        span Тип ткани
+
+    .filter__send 
+        button Применить
+
+    .filter__clear-all
+        button Сбросить
+
+    .filter__list-open
+        .filter__item.filter__item--inner
+            .filter__show-item.filter__show-item--search.btn-toggle-flex.container
+                input(type="text" placeholder="Я ищу")
+
+        .filter__item.filter__item--inner
+            .filter__show-item.btn-toggle-flex.container
+                p Хлопок
+
+        .filter__item.filter__item--inner
+            .filter__show-item.btn-toggle-flex.container
+                p Лен
+
+        .filter__item.filter__item--inner
+            .filter__show-item.btn-toggle-flex.container
+                p Лайкра
+
+        .filter__item.filter__item--inner
+            .filter__show-item.btn-toggle-flex.container
+                p Джакарт
+
+        .filter__item.filter__item--inner
+            .filter__show-item.btn-toggle-flex.container
+                p Шифон
+
+.filter__open.color-filter-open
+    a.container.filter__back.back-filter
+        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 13L1 7L7 0.999999" stroke="#826754" stroke-linecap="round"/></svg>
+        span Цвет
+
+    .filter__send 
+        button Применить
+
+    .filter__clear-all
+        button Сбросить
+
+    .filter__list-open
+        .filter__item.filter__item--inner
+            .filter__show-item.container
+                span.color(style="background-color:#FFFFFF")
+                p Белый
+
+        .filter__item.filter__item--inner
+            .filter__show-item.container
+                span.color(style="background-color:#BABABA")
+                p Серый
+
+        .filter__item.filter__item--inner
+            .filter__show-item.container
+                span.color(style="background-color:#005C90")
+                p Синий
+
+        .filter__item.filter__item--inner
+            .filter__show-item.container
+                span.color(style="background-color:#EA1616")
+                p Красный
+
+        .filter__item.filter__item--inner
+            .filter__show-item.container
+                span.color(style="background-color:#000000")
+                p Черный
+
+        .filter__item.filter__item--inner
+            .filter__show-item.container
+                span.color(style="background-color:#FFC700")
+                p Желтый
+
+        .filter__item.filter__item--inner
+            .filter__show-item.container
+                span.color(style="background-color:#CCE6F5")
+                p Голубой
+
+        .filter__item.filter__item--inner
+            .filter__show-item.container
+                span.color(style="background-color:#FB7800")
+                p Оранжевый
+
+
+.filter
+    .container.filter__back
+        a.filter__back-btn
+            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 13L1 7L7 0.999999" stroke="#826754" stroke-linecap="round"/></svg>
+            span Главная
+
+    .filter__clear-all
+        button Сбросить всё
+
+    .filter__send 
+        button Применить
+
+    ul.filter__list 
+        li.filter__item.filter__item--category#category-filter-open
+            .filter__caption.btn-toggle-flex.container
+                p Категория
+                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 1L7 7L0.999999 1" stroke="#826754" stroke-linecap="round"/></svg>
+
+        li.filter__item.filter__item--type#type-filter-open
+            .filter__caption.btn-toggle-flex.container
+                p Тип ткани
+                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 1L7 7L0.999999 1" stroke="#826754" stroke-linecap="round"/></svg>
+            .filter__content 
+                .filter__content-show-item.container 
+                    //- p Ткани
+                    //- img(src="img/closed2.svg" alt="")
+        li.filter__item.filter__item--color#color-filter-open
+            .filter__caption.btn-toggle-flex.container
+                p Цвет
+                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 1L7 7L0.999999 1" stroke="#826754" stroke-linecap="round"/></svg>
+            .filter__content.container 
+                //- .filter__content-show-item 
+                //-     span.color-item.color-item--1
+                //-     p Белый
+                //-     img(src="img/closed2.svg" alt="")
+                //- .filter__content-show-item 
+                //-     span.color-item.color-item--2
+                //-     p Серый
+                //-     img(src="img/closed2.svg" alt="")
+        li.filter__item.filter__item--width
+            .filter__caption.btn-toggle-flex.container
+                p Ширина, м
+                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 1L7 7L0.999999 1" stroke="#826754" stroke-linecap="round"/></svg>
+            .filter__content.container 
+                //- .filter__content-top 
+                //-     p От
+                //-     p До
+                //- .filter__content-bottom
+                //-     input(type="text" placeholder="0,5")
+                //-     input(type="text" placeholder="2")
+
+        li.filter__item.filter__item--sostav
+            .filter__caption.btn-toggle-flex.container
+                p Состав волокна
+                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 1L7 7L0.999999 1" stroke="#826754" stroke-linecap="round"/></svg>
+            .filter__content.container
+        li.filter__item.filter__item--sostav
+            .filter__caption.btn-toggle-flex.container
+                p ЦЕНА, ₽
+            .filter__content2.container 
+                .filter__content-top 
+                    p От
+                    p До
+                .filter__content-bottom
+                    input(type="text" placeholder="0,5")
+                    input(type="text" placeholder="2")
+        li.filter__item.filter__item--sostav
+            .filter__caption.btn-toggle-flex.container
+                p Плотность
+                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 1L7 7L0.999999 1" stroke="#826754" stroke-linecap="round"/></svg>
+            .filter__content.container

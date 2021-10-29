@@ -1,0 +1,171 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        #tooltip
+        include modules/header.pug
+
+        .wrapper
+            span.cursor-move
+            .breadcrumbs.container 
+                ul.breadcrumbs__list.content-size3
+                    li 
+                        a(href="index.html") Главная
+                    li 
+                        img(src="img/arrow-breadcrumbs.svg" alt="Стрелка")
+                    li 
+                        a.breadcrumbs__current Корзина
+            .basket
+                .container.inner 
+                    .basket__caption
+                        h2.title-inner Корзина
+                        button.content-size2#clear-basket.block-move Очистить корзину
+                    .inner.container__min
+                        .basket__wrapper
+                            .basket__items
+                                //- basket__item
+                                .basket__item.basket-item
+                                    img.basket-item__picture(src="img/basket/img1.png" alt="")
+                                    //- .basket-item__content
+                                    .basket-item__content
+                                        p.basket-item__name.content-size1 Винтажное льняное полотно - Темная орхидея
+                                        .basket-item__description 
+                                            .basket-item__price 
+                                                .basket-item__price-wrapper
+                                                    .basket-item__price-now.title-sub 400 ₽
+                                                    .basket-item__price-old.content-size2 500 ₽
+                                            .basket-item__calculate
+                                                input(type="image" src="img/minus.svg" width="24" alt="-")
+                                                input.content-size2(type="text" placeholder="1.5 м")
+                                                input(type="image" src="img/plus.svg" width="24" alt="+")
+                                            .basket-item__price 
+                                                .basket-item__price-wrapper
+                                                    .basket-item__price-now.title-sub 600 ₽
+                                                    .basket-item__price-old.content-size2 750 ₽
+                                        .basket-item__delete.btn-delete 
+                                            button 
+                                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 9L1 1" stroke="#826754" stroke-linecap="round"/><path d="M1 9L9 1" stroke="#826754" stroke-linecap="round"/></svg>
+                                //- basket__item
+                                .basket__item.basket-item
+                                    img.basket-item__picture(src="img/basket/img1.png" alt="")
+                                    //- .basket-item__content
+                                    .basket-item__content
+                                        p.basket-item__name.content-size1 Винтажное льняное полотно - Темная орхидея
+                                        .basket-item__description 
+                                            .basket-item__price 
+                                                .basket-item__price-wrapper
+                                                    .basket-item__price-now.title-sub 400 ₽
+                                                    .basket-item__price-old.content-size2 500 ₽
+                                            .basket-item__calculate
+                                                input(type="image" src="img/minus.svg" width="24" alt="-")
+                                                input.content-size2(type="text" placeholder="1.5 м")
+                                                input(type="image" src="img/plus.svg" width="24" alt="+")
+                                            .basket-item__price 
+                                                .basket-item__price-wrapper
+                                                    .basket-item__price-now.title-sub 600 ₽
+                                                    .basket-item__price-old.content-size2 750 ₽
+                                        .basket-item__delete.btn-delete 
+                                            button 
+                                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 9L1 1" stroke="#826754" stroke-linecap="round"/><path d="M1 9L9 1" stroke="#826754" stroke-linecap="round"/></svg>
+
+                            .basket-actions__buttons.basket-actions__buttons--mobile
+                                a.content-size2(href="").block-move Войти в личный кабинет
+
+                            .basket__actions.basket-actions 
+                                //- basket-actions__col 
+                                .basket-actions__col 
+                                    .basket-actions__block
+                                        p.basket-actions__title.title-sub Оформление заказа
+
+                                        .basket__form.form
+                                            .input-container.input-container--w100.ic1
+                                                input.input-container__input(type='text' placeholder=' ')
+                                                .cut
+                                                label.placeholder(for='').input-container__label Email
+                                            .input-container.input-container--w100-2.ic1
+                                                input.input-container__input(type='text' placeholder=' ')
+                                                .cut
+                                                label.placeholder(for='').input-container__label Имя
+                                            .input-container.input-container--w100-2.ic1
+                                                input.input-container__input(type='text' placeholder=' ')
+                                                .cut
+                                                label.placeholder(for='').input-container__label Фамилия
+                                            .input-container.ic1
+                                                input.input-container__input(type='text' placeholder=' ')
+                                                .cut
+                                                label.placeholder(for='').input-container__label Город
+                                            .input-container.ic1
+                                                input.input-container__input(type='text' placeholder=' ')
+                                                .cut
+                                                label.placeholder(for='').input-container__label Номер телефона 
+
+                                    .basket-actions__block
+                                        p.basket-actions__title.title-sub Способ оплаты
+                                        .basket__form.form
+                                            .form__field.form__field--w100
+                                                select 
+                                                    option Выберите способ оплаты 
+                                                    option Выберите способ оплаты 
+                                                    option Выберите способ оплаты 
+                                            .basket-actions__foot
+                                                p.content-size2 Мы принимаем оплату следующих платежных систем:
+                                                .basket-actions__brends 
+                                                    img(src="img/brends/img1.svg" alt="")
+                                                    img(src="img/brends/img2.svg" alt="").basket-actions__brends__mc
+                                                    img(src="img/brends/img3.svg" alt="")
+
+                                    .basket-actions__block
+                                        p.basket-actions__title.title-sub Способ доставки
+                                        .basket__form.form
+                                            .input-container.input-container--w100.ic1
+                                                input.input-container__input(type='text' placeholder=' ')
+                                                .cut
+                                                label.placeholder(for='').input-container__label Доставка почтой России 
+                                            .input-container.input-container--w100-2.input-container--mode.ic1
+                                                input.input-container__input(type='text' placeholder=' ')
+                                                .cut
+                                                label.placeholder(for='').input-container__label Улица
+                                            .input-container.input-container--mode.ic1
+                                                input.input-container__input(type='text' placeholder=' ')
+                                                .cut
+                                                label.placeholder(for='').input-container__label Дом
+                                            .input-container.input-container--mode.ic1
+                                                input.input-container__input(type='text' placeholder=' ')
+                                                .cut
+                                                label.placeholder(for='').input-container__label Квартира
+                                            .input-container.input-container--comment.ic2
+                                                textarea.input-container__input(type="text" placeholder=' ')
+                                                .cut 
+                                                label(for="").placeholder.input-container__label.input-container__label--comment Комментарий для курьера
+
+                                //- .basket-actions__col 
+                                .basket-actions__col
+                                    .basket-actions__block.basket-actions__total#objToStick 
+                                        p.basket-actions__title.title-sub Итого:
+                                        .basket-actions__price 
+                                            .basket-actions__delivery-price
+                                                p.content-size1 Доставка:
+                                                span.tooltip-item  
+                                                    p ?
+                                                    i.tooltip Стоимость доставки устанавливается автоматичестки, выбрать способ доставки можно в разделе «Способы доставки»
+                                                //- span.content-size1 Доставка: <i class="content-size2" data-tooltip="Стоимость доставки устанавливается автоматичестки, выбрать способ доставки можно в разделе «Способы доставки»" data-hint="#real-hint-1">?</i>
+                                                span.content-size2.basket__delivery-price#delivery-price 450 ₽
+                                            p.basket-actions__delivery-price
+                                                span.content-size1 Итого:
+                                                span.title-sub.basket__delivery-price#total-price 2470 ₽ 
+                                        p.content-size2.basket__caution Нажимая на кнопку «оплатить заказ», я принимаю <a style="text-decoration: underline">условия публичной оферты</a> и <a style="text-decoration: underline">политики конфиденциальности</a>
+                                        .basket-actions__buttons.basket-actions__buttons--desctop
+                                            a.content-size2(href="").block-move Войти в личный кабинет
+                                            a.content-size2(href="payment.html").block-move Доставка и оплата
+                                        .basket__pay.content-size2
+                                            a.btn-round Оплатить <i></i>
+
+
+
+
+
+
+        include modules/footer.pug
+        include modules/script.pug
+        script(src="js/top-fixed.js")
+        script(src="js/hint.js")

@@ -1,0 +1,123 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header.pug
+
+        .wrapper
+            span.cursor-move
+            .breadcrumbs.container 
+                ul.breadcrumbs__list.content-size3
+                    li 
+                        a(href="index.html") Главная
+                    li 
+                        img(src="img/arrow-breadcrumbs.svg" alt="Стрелка")
+                    li 
+                        a(href="articles.html") Статьи
+                    li 
+                        img(src="img/arrow-breadcrumbs.svg" alt="Стрелка")
+                    li 
+                        a.breadcrumbs__current Тонкости подбора фурнитуры
+
+            .article.container.inner.container__min
+                .article__date 04.08.2021
+                .inner__caption.inner__caption--center
+                    h2.title-inner.article__title Тонкости подбора фурнитуры
+                .article__block
+                    .article__text-block.content-size1.text-block
+                        p Свой цех — это полный контроль над сроками, качеством и процессом создания коллекции. Вы точно будете знать, что каждый шов ровный, ткани оптимально расходуются, а партия будет отшита вовремя.
+                        p Наш курс поможет открыть свой швейный цех, посмотрим по ссылке и у вас нет опыта в fashion-производстве. Вы узнаете, как выбрать помещение, сколько нужно оборудования, где найти опытных сотрудников и как контролировать их работу. Уже на курсе вы рассчитаете сколько денег нужно для открытия цеха и получите рекомендации по своему проекту от преподавателей
+                .article__block
+                    .article__quote.quote.content-size1
+                        p Свой цех — это полный контроль над сроками, качеством и процессом создания коллекции. Вы точно будете знать, что каждый шов ровный, ткани оптимально расходуются.
+                        p.quote__author.content-size2 Петрова М.К.
+                .article__block
+                    ul.article__pictures.pictures-row 
+                        li 
+                            img(src="img/article/img1.png" alt="")
+                            p.article__pictures-name.content-size2 Катушки ниток на полке
+                        li 
+                            img(src="img/article/img2.png" alt="")
+                            p.article__pictures-name.content-size2 Сантимент на столе
+                .article__block
+                    .article__text-block.content-size1 
+                        p Сейчас у нас больше возможности обратить внимания на собственные достопримечательности. Сейчас люди хлынули на русский север, на Байкал. Это здорово! Люди больше узнают об истории и традициях нашей родной страны. В частности русский север — лучшее направление, чтобы познать культуру нашей страны. Я призываю обратить внимание на не столь популярное направление, как бассейн Северной Двины, где располагается город Красноборск, в котором сохранились три вида уникальной старинной росписи — пермогорская, ракульская и увтюжская. Их еще называют «Жемчужинами севера». Фон плаката говорит о том, что эти росписи занесены в Красную книгу, ведь о них знают всё меньше и меньше людей. Для того, чтобы о них не забыли окончательно, я их извлекла и здесь курянам представила. На плакате есть подпись «Путешествуйте по России» — не нужно инвестировать в казну другого государства, нужно оставлять капитал у себя дома.
+                .article__block
+                    .article__quote.quote.quote--mode.content-size1
+                        p Что-то на важном про фурнитуру, нитки и какие-то еще вещи в мире шитья будет тут написано, просто какая-то фраза, которая считается важной и ее выделяют.
+                .article__zigzag
+                .article__block
+                    h2.title-sub.article__caption Почему ножницы должны быть правильными?
+                    ul.article__list 
+                        li Обычными канцелярскими ножницами невозможно сделать прямые надсечки, а процесс раскроя отнимет намного больше времени. При этом результат будет сомнительного качества: неровные срезы, осыпающиеся нити.
+                        li В отличие от канцелярских, портновские и закройные ножницы для ткани изготавливаются из стальных сплавов, которые используют для профессиональных инструментов. Они тяжелее, с заостренными режущими кончиками: можно легко сделать надрез всего в несколько миллиметров.
+                        li Ножницы для шитья бывают разных размеров, у опытной мастерицы их обычно не меньше трех. Самые большие имеют лезвия длиной свыше 40 см. Разные инструменты нужны для работы с тканями разной плотности. Раскройные и портновские ножницы есть и для «правшей», и для «левшей».
+                    ul.article__pictures.pictures-row
+                        li
+                            img(src="img/article/img3.png" alt="")
+                            p.article__pictures-name.content-size2 Катушки ниток на полке
+                        li
+                            img(src="img/article/img4.png" alt="")
+                            p.article__pictures-name.content-size2 Сантимент на столе
+                .article__block 
+                    .article__table 
+                        h2.title-sub.article__caption Рейтинг полезной фурнитуры
+                        .article__table-content
+                            table.content-size2 
+                                thead 
+                                    tr 
+                                        th Категория фурнитуры
+                                        th Цвет
+                                        th Материал
+                                        th Механика
+                                tbody 
+                                    tr 
+                                        td Нитки
+                                        td Черный
+                                        td Пластик
+                                        td Сшивать
+                                    tr  
+                                        td Ножницы
+                                        td Серебро
+                                        td Металл
+                                        td Резать
+                                    tr 
+                                        td Булавка
+                                        td Красный
+                                        td Пластик/металл
+                                        td Закреплять
+                .article__block
+                    .article__share
+                        p.content-size2 Поделиться
+                        .article__zigzag
+                        include blocks/social-icon.pug
+
+            .article__block.container
+                .inner__caption
+                    h2.title-inner Возможно, вас заинтересует
+                .articles-page__list.articles-page__list--mode
+                    a.articles-page__card(href="#")
+                        img.articles-page(src="img/articles/page/img1.png" alt="Превью статьи")
+                        .article-page__footer.card-footer.block-move
+                            .card-footer__col
+                                p.card-footer__date.content-size2 25.07.2021
+                            .card-footer__col
+                                p.card-footer__name.title-sub Тонкости подбора фурнитуры
+                    a.articles-page__card(href="#")
+                        img.articles-page(src="img/articles/page/img1.png" alt="Превью статьи")
+                        .article-page__footer.card-footer.block-move
+                            .card-footer__col 
+                                p.card-footer__date.content-size2 25.07.2021
+                            .card-footer__col 
+                                p.card-footer__name.title-sub Тонкости подбора фурнитуры
+                    a.articles-page__card(href="#")
+                        img.articles-page(src="img/articles/page/img1.png" alt="Превью статьи")
+                        .article-page__footer.card-footer.block-move
+                            .card-footer__col 
+                                p.card-footer__date.content-size2 25.07.2021
+                            .card-footer__col 
+                                p.card-footer__name.title-sub Тонкости подбора фурнитуры
+
+
+        include modules/footer.pug
+        include modules/script.pug

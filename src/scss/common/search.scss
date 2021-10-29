@@ -1,0 +1,27 @@
+.search__form {
+  margin-bottom: 40px;
+  position: relative;
+  input {
+    width: 100%;
+    line-height: 36px;
+    padding: 0 20px;
+    border: 1px solid #826754;
+    border-radius: 5px;
+    @media (max-width: 767px) {
+      height: 48px;
+    }
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/glass.svg");
+    background-size: cover;
+    z-index: 10;
+  }
+}

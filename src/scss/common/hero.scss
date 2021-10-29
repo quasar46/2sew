@@ -1,0 +1,48 @@
+.hero {
+  position: relative;
+}
+
+.hero__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 10;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.hero__picture {
+  width: 100%;
+}
+
+.hero__slicks {
+  picture {
+    @media (max-width: 1023px) {
+      height: 315px;
+      object-fit: cover;
+    }
+    @media (max-width: 767px) {
+      height: 100%;
+    }
+    img {
+      @media (max-width: 767px) {
+        height: 100%;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    height: calc(100vh - 104px);
+  }
+  .slick-list {
+    @media (max-width: 767px) {
+      height: 100%;
+    }
+  }
+  .slick-track {
+    @media (max-width: 767px) {
+      height: 100%;
+    }
+  }
+}

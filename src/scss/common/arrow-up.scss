@@ -1,0 +1,24 @@
+.arrow-up {
+  width: 50px;
+  height: 50px;
+  display: block;
+  //   border-radius: 50%;
+  position: fixed;
+  bottom: 100px;
+  right: 70px;
+  z-index: 100;
+  a {
+    transition: 1s;
+  }
+  @media (max-width: 1919px) {
+    right: 60px;
+  }
+  @media (max-width: 1249px) {
+    right: 50px;
+  }
+  @media (max-width: 767px) {
+    right: 15px;
+    width: 50px;
+    height: 50px;
+  }
+}

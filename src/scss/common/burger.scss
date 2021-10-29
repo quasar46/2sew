@@ -1,0 +1,20 @@
+.burger {
+  display: none;
+  cursor: pointer;
+  flex: 0 1 auto;
+  img {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+
+  @media (max-width: 1365px) {
+    display: block;
+  }
+  @media (max-width: 767px) {
+    order: 10;
+    margin-left: 15px;
+    transform: scale(-1, 1);
+  }
+}

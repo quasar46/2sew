@@ -1,0 +1,449 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header.pug
+
+        .wrapper
+            span.cursor-move
+            .breadcrumbs.breadcrumbs--catalog.container 
+                ul.breadcrumbs__list.content-size3
+                    li 
+                        a(href="index.html") Главная
+                    li 
+                        img(src="img/arrow-breadcrumbs.svg" alt="Стрелка")
+                    li 
+                        a.breadcrumbs__current Ткани
+
+            .catalog-main.container.inner 
+                //- catalog-main__aside
+                .catalog-main__aside.catalog-aside
+                    .catalog-main__aside-block
+                        p.content-size2.btn-toggle
+                            span Категория
+                            <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 7L7 1L13 7" stroke="#826754" stroke-linecap="round"/></svg>
+                        ul.catalog-aside__list.content-size2 
+                            li.catalog-aside__list-item  
+                                input(type="radio" id="category1" name="category" checked)
+                                label(for="category1") Ткани
+                            li.catalog-aside__list-item 
+                                input(type="radio" id="category2" name="category")
+                                label(for="category2") Фурнитура
+                            li.catalog-aside__list-item 
+                                input(type="radio" id="category3" name="category")
+                                label(for="category3") Выкройки
+                    .catalog-main__aside-block
+                        p.content-size2.btn-toggle 
+                            span Цвет
+                            <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 7L7 1L13 7" stroke="#826754" stroke-linecap="round"/></svg>
+                        ul.catalog-aside__list.catalog-aside__list--color
+                            li.catalog-aside__item-color 
+                                input(type="checkbox" id="color--1" checked)
+                                label(for="color--1").color.color--1
+                            li.catalog-aside__item-color
+                                input(type="checkbox" id="color--2")
+                                label(for="color--2").color.color--2
+                            li.catalog-aside__item-color
+                                input(type="checkbox" id="color--3")
+                                label(for="color--3").color.color--3  
+                            li.catalog-aside__item-color
+                                input(type="checkbox" id="color--4")
+                                label(for="color--4").color.color--4  
+                            li.catalog-aside__item-color
+                                input(type="checkbox" id="color--5")
+                                label(for="color--5").color.color--5  
+                            li.catalog-aside__item-color
+                                input(type="checkbox" id="color--6")
+                                label(for="color--6").color.color--6  
+                            li.catalog-aside__item-color 
+                                input(type="checkbox" id="color--7")
+                                label(for="color--7").color.color--7 
+                            li.catalog-aside__item-color
+                                input(type="checkbox" id="color--8")
+                                label(for="color--8").color.color--8  
+                            li.catalog-aside__item-color 
+                                input(type="checkbox" id="color--9")
+                                label(for="color--9").color.color--9 
+                            li.catalog-aside__item-color
+                                input(type="checkbox" id="color--10")
+                                label(for="color--10").color.color--10  
+                            li.catalog-aside__item-color
+                                input(type="checkbox" id="color--11")
+                                label(for="color--11").color.color--11 
+                            li.catalog-aside__item-color
+                                input(type="checkbox" id="color--12")
+                                label(for="color--12").color.color--12 
+                    .catalog-main__aside-block
+                        p.content-size2.btn-toggle 
+                            span Тип ткани
+                            <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 7L7 1L13 7" stroke="#826754" stroke-linecap="round"/></svg>
+                        .catalog-aside__list.catalog-aside__list--type
+                            input(type="text" placeholder="Я ищу...")
+                            ul.checkbox                     
+                                li.catalog-aside__list-item  
+                                    input(type="checkbox" id="type1" checked)
+                                    label(for="type1") Хлопок
+                                li.catalog-aside__list-item 
+                                    input(type="checkbox" id="type2")
+                                    label(for="type2") Лен
+                                li.catalog-aside__list-item 
+                                    input(type="checkbox" id="type3")
+                                    label(for="type3") Лайкра
+                                li.catalog-aside__list-item  
+                                    input(type="checkbox" id="type4")
+                                    label(for="type4") Джакарт
+                                li.catalog-aside__list-item  
+                                    input(type="checkbox" id="type5")
+                                    label(for="type5") Шифон
+                                li.catalog-aside__list-item  
+                                    input(type="checkbox" id="type6")
+                                    label(for="type6") Шифон
+                                li.catalog-aside__list-item 
+                                    input(type="checkbox" id="type7")
+                                    label(for="type7") Хлопок
+                                li.catalog-aside__list-item  
+                                    input(type="checkbox" id="type8")
+                                    label(for="type8") Лен
+                                li.catalog-aside__list-item  
+                                    input(type="checkbox" id="type9")
+                                    label(for="type9") Лайкра
+                                li.catalog-aside__list-item  
+                                    input(type="checkbox" id="type10")
+                                    label(for="type10") Джакарт
+                                li.catalog-aside__list-item  
+                                    input(type="checkbox" id="type11")
+                                    label(for="type11") Шифон
+                                li.catalog-aside__list-item  
+                                    input(type="checkbox" id="type12")
+                                    label(for="type12") Шифон
+                            ul.radio
+                                li.catalog-aside__list-item  
+                                    input(type="radio" id="type13" name="typeRadio" checked)
+                                    label(for="type13") Хлопок
+                                li.catalog-aside__list-item 
+                                    input(type="radio" id="type14" name="typeRadio")
+                                    label(for="type14") Лен
+                                li.catalog-aside__list-item 
+                                    input(type="radio" id="type15" name="typeRadio")
+                                    label(for="type15") Лайкра
+                                li.catalog-aside__list-item  
+                                    input(type="radio" id="type16" name="typeRadio")
+                                    label(for="type16") Джакарт
+                                li.catalog-aside__list-item  
+                                    input(type="radio" id="type17" name="typeRadio")
+                                    label(for="type17") Шифон
+                                li.catalog-aside__list-item  
+                                    input(type="radio" id="type18" name="typeRadio")
+                                    label(for="type18") Шифон
+                                li.catalog-aside__list-item 
+                                    input(type="radio" id="type19" name="typeRadio")
+                                    label(for="type19") Хлопок
+                                li.catalog-aside__list-item  
+                                    input(type="radio" id="type20" name="typeRadio")
+                                    label(for="type20") Лен
+                                li.catalog-aside__list-item  
+                                    input(type="radio" id="type21" name="typeRadio")
+                                    label(for="type21") Лайкра
+                                li.catalog-aside__list-item  
+                                    input(type="radio" id="type22" name="typeRadio")
+                                    label(for="type22") Джакарт
+                                li.catalog-aside__list-item  
+                                    input(type="radio" id="type23" name="typeRadio")
+                                    label(for="type23") Шифон
+                                li.catalog-aside__list-item  
+                                    input(type="radio" id="type24" name="typeRadio")
+                                    label(for="type24") Шифон
+                    .catalog-main__aside-block
+                        p.content-size2.btn-toggle 
+                            span ЦЕНА, ₽
+                            <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 7L7 1L13 7" stroke="#826754" stroke-linecap="round"/></svg>
+                        .catalog-aside__list.catalog-aside__list--price 
+                            .catalog-aside__list-top
+                                span От
+                                span До
+                            .catalog-aside__list-bottom.content-size2 
+                                input(type="text" placeholder="0")
+                                input(type="text" placeholder="10 000")
+                    .catalog-main__aside-block
+                        p.content-size2.btn-toggle 
+                            span Ширина
+                            <svg class="current" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 7L7 1L13 7" stroke="#826754" stroke-linecap="round"/></svg>
+                    .catalog-main__aside-block
+                        p.content-size2.btn-toggle 
+                            span Состав волокна
+                            <svg class="current" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 7L7 1L13 7" stroke="#826754" stroke-linecap="round"/></svg>
+                    .catalog-main__aside-block
+                        p.content-size2.btn-toggle 
+                            span Плотность
+                            <svg class="current" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 7L7 1L13 7" stroke="#826754" stroke-linecap="round"/></svg>
+
+                //- catalog-main__content
+                .catalog-main__content.catalog-content 
+                    .catalog-content__top
+                        .catalog-content__top-breadcrumbs.breadcrumbs__back-page
+                            a(href="index.html") 
+                                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 13L1 7L7 0.999999" stroke="#826754" stroke-linecap="round"/></svg>
+                                span Главная
+                        .catalog-content__top-sort
+                            .content-size2.btn-toggle-sort
+                                span Сортировка
+                                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 1L7 7L1 0.999999" stroke="#826754" stroke-linecap="round"/></svg>
+                                //- catalog-sorting
+                                .catalog__sorting.catalog-sorting
+                                    ul.catalog-sorting__list 
+                                        li 
+                                            p.catalog-sorting__item.active По популярности
+                                        li 
+                                            p.catalog-sorting__item По обновлению
+                                        li 
+                                            p.catalog-sorting__item По цене min
+                                        li 
+                                            p.catalog-sorting__item По цене max
+
+                            ul.catalog-content__top-sort__list
+                                li 
+                                    p Ткани
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="12" fill="#CCE6F5"/><path d="M16 8L8 16" stroke="#826754" stroke-linecap="round"/><path d="M16 16L8 8" stroke="#826754" stroke-linecap="round"/></svg>
+                                li 
+                                    p Хлопок
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="12" fill="#CCE6F5"/><path d="M16 8L8 16" stroke="#826754" stroke-linecap="round"/><path d="M16 16L8 8" stroke="#826754" stroke-linecap="round"/></svg>
+                                li 
+                                    p Голубой
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="12" fill="#CCE6F5"/><path d="M16 8L8 16" stroke="#826754" stroke-linecap="round"/><path d="M16 16L8 8" stroke="#826754" stroke-linecap="round"/></svg>
+                        .catalog-content__top-btns
+                            a
+                                button 
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="11" height="11" fill="#826754"/><rect y="14" width="11" height="11" fill="#826754"/><rect x="14" y="14" width="11" height="11" fill="#826754"/><rect x="14" width="11" height="11" fill="#826754"/></svg>
+                            a(href="catalog-main.html")  
+                                button 
+                                    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="8" height="7" fill="#F3EBE8"/><rect y="9" width="8" height="7" fill="#F3EBE8"/><rect y="18" width="8" height="7" fill="#F3EBE8"/><rect x="10" width="7" height="7" fill="#F3EBE8"/><rect x="10" y="9" width="7" height="7" fill="#F3EBE8"/><rect x="10" y="18" width="7" height="7" fill="#F3EBE8"/><rect x="19" width="7" height="7" fill="#F3EBE8"/><rect x="19" y="9" width="7" height="7" fill="#F3EBE8"/><rect x="19" y="18" width="7" height="7" fill="#F3EBE8"/></svg>
+
+                    .catalog-content__mobile 
+                        .catalog-content__mobile-item.btn-toggle-sort
+                            span Сортировка
+                            <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 1L7 7L1 0.999999" stroke="#826754" stroke-linecap="round"/></svg>
+                            //- catalog-sorting
+                            .catalog__sorting.catalog-sorting
+                                ul.catalog-sorting__list 
+                                    li 
+                                        p.catalog-sorting__item.active По популярности
+                                    li 
+                                        p.catalog-sorting__item По обновлению
+                                    li 
+                                        p.catalog-sorting__item По цене min
+                                    li 
+                                        p.catalog-sorting__item По цене max
+
+                        .catalog-content__mobile-item.btn-toggle-filter
+                            span Фильтр
+                            <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 1L7 7L1 0.999999" stroke="#826754" stroke-linecap="round"/></svg>
+                            .catalog-filter
+                            include filters/filter.pug
+
+                    ul.catalog__list.catalog__list--inner-2
+                        a.catalog__item.catalog__item--inner-2
+                            .catalog__action-btn.catalog__action-btn--mode2.catalog__sale 
+                                p
+                                    span 30
+                                    i %
+                            .catalog__action-btn.catalog__action-btn--mode2.catalog__like
+                                <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+
+                            img.catalog__picture(src="img/catalog/img1-b.jpg" alt="")
+                            .block-move
+                                p.catalog__name.content-size1 Шифон с цветами
+                                .catalog__bottom
+                                    .catalog__price.title-sub
+                                        span 550 ₽
+                                        span.catalog__price--old.content-size2 650 ₽
+                                    .catalog__size.content-size2 
+                                        span 1 М
+                        a.catalog__item.catalog__item--inner-2
+                            .catalog__action-btn.catalog__action-btn--mode2.catalog__like
+                                <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+
+                            img.catalog__picture(src="img/catalog/img2-b.jpg" alt="")
+                            .block-move
+                                p.catalog__name.content-size1 Хлопок белый
+                                .catalog__bottom
+                                    .catalog__price.title-sub
+                                        span 550 ₽
+                                    .catalog__size.content-size2 
+                                        span 1 М
+                        a.catalog__item.catalog__item--inner-2
+                            .catalog__action-btn.catalog__action-btn--mode2.catalog__like
+                                <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+
+                            img.catalog__picture(src="img/catalog/img3-b.jpg" alt="")
+                            .block-move
+                                p.catalog__name.content-size1 Лен бежевый
+                                .catalog__bottom
+                                    .catalog__price.title-sub
+                                        span 550 ₽
+                                        span.catalog__price--old.content-size2 650 ₽
+                                    .catalog__size.content-size2 
+                                        span 1 М
+                        a.catalog__item.catalog__item--inner-2
+                            .catalog__action-btn.catalog__action-btn--mode2.catalog__like
+                                <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+
+                            img.catalog__picture(src="img/catalog/img1-b.jpg" alt="")
+                            .block-move
+                                p.catalog__name.content-size1 Атлас розовый
+                                .catalog__bottom
+                                    .catalog__price.title-sub
+                                        span 550 ₽
+                                    .catalog__size.content-size2 
+                                        span 1 М
+                        a.catalog__item.catalog__item--inner-2
+                            .catalog__action-btn.catalog__action-btn--mode2.catalog__like
+                                <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+
+                            img.catalog__picture(src="img/catalog/img1-b.jpg" alt="")
+                            .block-move
+                                p.catalog__name.content-size1 Шифон в полоску
+                                .catalog__bottom
+                                    .catalog__price.title-sub
+                                        span 550 ₽
+                                    .catalog__size.content-size2 
+                                        span 1 М
+                        a.catalog__item.catalog__item--inner-2
+                            .catalog__action-btn.catalog__action-btn--mode2.catalog__sale 
+                                p 
+                                    span 30
+                                    i %
+                            .catalog__action-btn.catalog__action-btn--mode2.catalog__like
+                                <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+
+                            img.catalog__picture(src="img/catalog/img1-b.jpg" alt="")
+                            .block-move
+                                p.catalog__name.content-size1 Шифон с цветами
+                                .catalog__bottom
+                                    .catalog__price.title-sub
+                                        span 550 ₽
+                                        span.catalog__price--old.content-size2 650 ₽
+                                    .catalog__size.content-size2 
+                                        span 1 М
+                        a.catalog__item.catalog__item--inner-2
+                            .catalog__action-btn.catalog__action-btn--mode2.catalog__like
+                                <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+
+                            img.catalog__picture(src="img/catalog/img2-b.jpg" alt="")
+                            .block-move
+                                p.catalog__name.content-size1 Хлопок белый
+                                .catalog__bottom
+                                    .catalog__price.title-sub
+                                        span 550 ₽
+                                    .catalog__size.content-size2 
+                                        span 1 М
+                        a.catalog__item.catalog__item--inner-2
+                            .catalog__action-btn.catalog__action-btn--mode2.catalog__like
+                                <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+
+                            img.catalog__picture(src="img/catalog/img2-b.jpg" alt="")
+                            .block-move
+                                p.catalog__name.content-size1 Лен бежевый
+                                .catalog__bottom
+                                    .catalog__price.title-sub
+                                        span 550 ₽
+                                        span.catalog__price--old.content-size2 650 ₽
+                                    .catalog__size.content-size2 
+                                        span 1 М
+                        a.catalog__item.catalog__item--inner-2
+                            .catalog__action-btn.catalog__action-btn--mode2.catalog__like
+                                <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+
+                            img.catalog__picture(src="img/catalog/img2-b.jpg" alt="")
+                            .block-move
+                                p.catalog__name.content-size1 Атлас розовый
+                                .catalog__bottom
+                                    .catalog__price.title-sub
+                                        span 550 ₽
+                                    .catalog__size.content-size2 
+                                        span 1 М
+                        a.catalog__item.catalog__item--inner-2
+                            .catalog__action-btn.catalog__action-btn--mode2.catalog__like
+                                <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+
+                            img.catalog__picture(src="img/catalog/img3-b.jpg" alt="")
+                            .block-move
+                                p.catalog__name.content-size1 Шифон в полоску
+                                .catalog__bottom
+                                    .catalog__price.title-sub
+                                        span 550 ₽
+                                    .catalog__size.content-size2 
+                                        span 1 М
+                        a.catalog__item.catalog__item--inner-2
+                            .catalog__action-btn.catalog__action-btn--mode2.catalog__sale 
+                                p 
+                                    span 30
+                                    i %
+                            .catalog__action-btn.catalog__action-btn--mode2.catalog__like
+                                <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+
+                            img.catalog__picture(src="img/catalog/img3-b.jpg" alt="")
+                            .block-move
+                                p.catalog__name.content-size1 Шифон с цветами
+                                .catalog__bottom
+                                    .catalog__price.title-sub
+                                        span 550 ₽
+                                        span.catalog__price--old.content-size2 650 ₽
+                                    .catalog__size.content-size2 
+                                        span 1 М
+                        a.catalog__item.catalog__item--inner-2
+                            .catalog__action-btn.catalog__action-btn--mode2.catalog__like
+                                <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+
+                            img.catalog__picture(src="img/catalog/img3-b.jpg" alt="")
+                            .block-move
+                                p.catalog__name.content-size1 Хлопок белый
+                                .catalog__bottom
+                                    .catalog__price.title-sub
+                                        span 550 ₽
+                                    .catalog__size.content-size2 
+                                        span 1 М
+                        a.catalog__item.catalog__item--inner-2
+                            .catalog__action-btn.catalog__action-btn--mode2.catalog__like
+                                <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+
+                            img.catalog__picture(src="img/catalog/img2-b.jpg" alt="")
+                            .block-move
+                                p.catalog__name.content-size1 Лен бежевый
+                                .catalog__bottom
+                                    .catalog__price.title-sub
+                                        span 550 ₽
+                                        span.catalog__price--old.content-size2 650 ₽
+                                    .catalog__size.content-size2 
+                                        span 1 М
+                        a.catalog__item.catalog__item--inner-2
+                            .catalog__action-btn.catalog__action-btn--mode2.catalog__like
+                                <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+
+                            img.catalog__picture(src="img/catalog/img2-b.jpg" alt="")
+                            .block-move
+                                p.catalog__name.content-size1 Атлас розовый
+                                .catalog__bottom
+                                    .catalog__price.title-sub
+                                        span 550 ₽
+                                    .catalog__size.content-size2 
+                                        span 1 М
+                        a.catalog__item.catalog__item--inner-2
+                            .catalog__action-btn.catalog__action-btn--mode2.catalog__like
+                                <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+
+                            img.catalog__picture(src="img/catalog/img2-b.jpg" alt="")
+                            .block-move
+                                p.catalog__name.content-size1 Шифон в полоску
+                                .catalog__bottom
+                                    .catalog__price.title-sub
+                                        span 550 ₽
+                                    .catalog__size.content-size2 
+                                        span 1 М
+                        a.catalog__item.link__show-more 
+                            button Показать еще
+
+                    include blocks/pagination.pug
+
+
+        include modules/footer.pug
+        include modules/script.pug

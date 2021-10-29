@@ -1,0 +1,21 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header.pug
+        .wrapper.container
+            span.cursor-move
+            .notfound
+                .notfount__content
+                    h2.title-inner 404
+                    p.content-size1 Упс, эта страница не найдена
+                    a(href="catalog.html").notfound__link.block-move В каталог
+                .notfound__picture
+                    img(src="img/404.png" alt="")
+
+
+
+
+
+        include modules/footer.pug
+        include modules/script.pug

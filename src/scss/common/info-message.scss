@@ -1,0 +1,70 @@
+.info-message {
+  position: fixed;
+  right: 70px;
+  bottom: 20px;
+  width: 305px;
+  border-radius: 5px;
+  padding: 30px 20px;
+  background: #f3ebe8;
+  display: flex;
+  opacity: 0;
+  transition: all 0.5s;
+  align-items: center;
+  z-index: 1;
+  // z-index: -1;
+  p {
+    font-size: 18px;
+    color: #4c2613;
+    line-height: 23px;
+    @media (max-width: 1919px) {
+      font-size: 17px;
+    }
+    @media (max-width: 1365px) {
+      font-size: 16px;
+    }
+  }
+  &.active {
+    opacity: 1;
+  }
+  @media (max-width: 1919px) {
+    width: 286px;
+  }
+  @media (max-width: 1365px) {
+    width: 269px;
+    padding: 25px 15px;
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+    padding: 16px 18px;
+    bottom: 0;
+    left: 0;
+    border-radius: 0;
+  }
+}
+
+.info-message__icon {
+  margin-right: 15px;
+  max-width: 47px;
+  width: 100%;
+  height: 47px;
+  flex: 1 0 auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 1919px) {
+    max-width: 40px;
+    width: 100%;
+    height: 40px;
+  }
+  @media (max-width: 1365px) {
+    max-width: 36px;
+    width: 100%;
+    height: 36px;
+  }
+  @media (max-width: 767px) {
+    max-width: 32px;
+    width: 100%;
+    height: 32px;
+  }
+}

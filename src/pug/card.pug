@@ -1,0 +1,450 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header.pug
+
+        .wrapper
+            span.cursor-move
+            .inner
+                .breadcrumbs.breadcrumbs--mode.container 
+                    ul.breadcrumbs__list.breadcrumbs__list.content-size3
+                        li 
+                            a(href="index.html") Главная
+                        li 
+                            img(src="img/arrow-breadcrumbs.svg" alt="Стрелка")
+                        li 
+                            a(href="index.html") Ткани
+                        li 
+                            img(src="img/arrow-breadcrumbs.svg" alt="Стрелка")
+                        li 
+                            a.breadcrumbs__current Винтажное льняное полотно – орхидея
+
+                .card.container.inner
+                    .card__wrapper 
+                        .breadcrumbs__back-page 
+                            a(href="catalog-main.html") 
+                                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 13L1 7L7 0.999999" stroke="#826754" stroke-linecap="round"/></svg>
+                                span В каталог
+                        .card__inner
+                            .card__pictures
+                                button.slick-prev.slick__card-pictures.slick-arrow
+                                button.slick-next.slick__card-pictures.slick-arrow
+                                .card__pictures-nav.slick-slider.slider-nav 
+                                    .card__pictures-nav-item
+                                        img(src="img/card/img1.png" alt="Изоброжение карточки товара")
+                                    .card__pictures-nav-item
+                                        img(src="img/card/img2.png" alt="Изоброжение карточки товара")
+                                    .card__pictures-nav-item
+                                        img(src="img/card/img3.png" alt="Изоброжение карточки товара")
+                                    .card__pictures-nav-item
+                                        img(src="img/card/img4.png" alt="Изоброжение карточки товара")
+                                    .card__pictures-nav-item
+                                        img(src="img/card/img1.png" alt="Изоброжение карточки товара")
+                                    .card__pictures-nav-item
+                                        img(src="img/card/img2.png" alt="Изоброжение карточки товара")
+                                    .card__pictures-nav-item
+                                        img(src="img/card/img3.png" alt="Изоброжение карточки товара")
+                                    .card__pictures-nav-item
+                                        img(src="img/card/img4.png" alt="Изоброжение карточки товара")
+                                    .card__pictures-nav-item
+                                        img(src="img/card/img1.png" alt="Изоброжение карточки товара")
+                                    .card__pictures-nav-item
+                                        img(src="img/card/img2.png" alt="Изоброжение карточки товара")
+                                .card__pictures-for.slick-slider.slider-for 
+                                    img(src="img/card/img1-big.png" alt="")
+                                    img(src="img/card/img1-big.png" alt="")
+                                    img(src="img/card/img1-big.png" alt="")
+                                    img(src="img/card/img1-big.png" alt="")
+                                    img(src="img/card/img1-big.png" alt="")
+                                    img(src="img/card/img1-big.png" alt="")
+
+
+                            .card__content 
+                                p.card__name.title-sub Винтажное льняное полотно – орхидея
+                                .card__price 
+                                    span.title-inner  400 ₽
+                                    span.card__old-price.content-size2  500 ₽
+                                .card__color 
+                                    ul.catalog-aside__list.catalog-aside__list--color
+                                        li.catalog-aside__item-color 
+                                            input(type="radio" id="color--1" name="color" checked)
+                                            label(for="color--1").color.color--1
+                                        li.catalog-aside__item-color
+                                            input(type="radio" id="color--2" name="color")
+                                            label(for="color--2").color.color--2
+                                        li.catalog-aside__item-color
+                                            input(type="radio" id="color--3" name="color")
+                                            label(for="color--3").color.color--3  
+                                .card__amount.card__amount--mobile
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="24" width="24" height="24" rx="12" transform="rotate(90 24 0)" fill="#CCE6F5"/><path d="M17.6569 11.9994L6.34315 11.9994" stroke="#826754" stroke-linecap="round"/></svg>
+                                    input(type="text" placeholder="1.5 м")
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="24" width="24" height="24" rx="12" transform="rotate(90 24 0)" fill="#CCE6F5"/><rect x="24.0312" y="0.0292969" width="24" height="24" rx="12" transform="rotate(90 24.0312 0.0292969)" fill="#CCE6F5"/><path d="M11.9986 17.6569L11.9987 6.34315" stroke="#826754" stroke-linecap="round"/><path d="M6.34315 11.9996L17.6569 11.9996" stroke="#826754" stroke-linecap="round"/></svg>
+
+
+                                .card__row.content-size2
+                                    .card__amount
+                                        //- span 
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="24" width="24" height="24" rx="12" transform="rotate(90 24 0)" fill="#CCE6F5"/><path d="M17.6569 11.9994L6.34315 11.9994" stroke="#826754" stroke-linecap="round"/></svg>
+                                        input(type="text" placeholder="1.5 м")
+                                        //- span
+                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="24" width="24" height="24" rx="12" transform="rotate(90 24 0)" fill="#CCE6F5"/><rect x="24.0312" y="0.0292969" width="24" height="24" rx="12" transform="rotate(90 24.0312 0.0292969)" fill="#CCE6F5"/><path d="M11.9986 17.6569L11.9987 6.34315" stroke="#826754" stroke-linecap="round"/><path d="M6.34315 11.9996L17.6569 11.9996" stroke="#826754" stroke-linecap="round"/></svg>
+                                    .card__buy-btn 
+                                        button В корзину
+                                    .card__favorite 
+                                        <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.3804 3.49086L12 4.39932L12.6196 3.49083C13.0333 2.88424 13.4969 2.37299 14.0003 1.96022C14.9892 1.14928 16.0915 0.75 17.2956 0.75C18.9265 0.75 20.4268 1.43876 21.5302 2.70776C22.625 3.96717 23.25 5.71511 23.25 7.64802C23.25 9.59784 22.5735 11.4098 21.0287 13.3863C19.6245 15.1828 17.5922 17.0226 15.1582 19.2221L15.1553 19.2247C14.3307 19.9699 13.3925 20.8177 12.4179 21.7213C12.296 21.8345 12.1471 21.891 12 21.891C11.8529 21.891 11.7043 21.8348 11.5829 21.7221C10.6158 20.8253 9.68356 19.9827 8.86329 19.2414L8.84133 19.2215C6.40764 17.0224 4.37528 15.1828 2.97112 13.3862C1.42643 11.41 0.75 9.59789 0.75 7.64782C0.75 5.71508 1.37497 3.9672 2.46992 2.7078C3.5734 1.43876 5.07347 0.75 6.70441 0.75C7.90847 0.75 9.01088 1.1493 9.99992 1.96022M11.3804 3.49086C10.9665 2.88408 10.5032 2.37301 9.99992 1.96022M11.3804 3.49086L9.99992 1.96022" stroke="#4D2612" stroke-width="1.5"/></svg>
+
+                                .card__description
+                                    .card__item
+                                        .card__title.content-size2.btn-toggle 
+                                            span ИНФОРМАЦИЯ О ТОВАРЕ
+                                            <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 8L7 2L13 8" stroke="#826754" stroke-width="1.5" stroke-linecap="round"/></svg>
+                                        ul 
+                                            li 
+                                                span Цвет:
+                                                i 
+                                            li 
+                                                span розовый
+                                            li 
+                                                span Плотность:
+                                                i 
+                                            li 
+                                                span 250 гр/м2 
+                                            li 
+                                                span Состав:
+                                                i 
+                                            li 
+                                                span 95% Хлопок
+                                            li 
+                                                span Качество:
+                                                i 
+                                            li 
+                                                span Пенье 
+                                            li 
+                                                span Ширина:
+                                                i 
+                                            li 
+                                                span 180 см 
+                                            li 
+                                                span Производитель:
+                                                i 
+                                            li 
+                                                span Турция
+
+                                    .card__item
+                                        .card__title.content-size2.btn-toggle 
+                                            span Описание товара
+                                            <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 8L7 2L13 8" stroke="#826754" stroke-width="1.5" stroke-linecap="round"/></svg>
+                                        p.content-size1 Футер – хлопчатобумажный трикотаж, обладающий гладкой текстурой с лицевой стороны, мягкими петельками или начесом с изнаночной. На ощупь материал нежный и приятный, комфортен к коже. Полотно тонкое и гибкое, хорошо растягивается и держит форму. В качестве сырья используют хлопок. Из футера шьют свитшоты, кофты, платья, легкие спортивные костюмы, одежду для детей. Он идеально подходит для детского ассортимента. Изготовлено полотно из отборных хлопковых волокон, гладкое и шелковистое, устойчивое к пиллингуемости, то есть появлению катышек
+
+                                    .card__item
+                                        .card__title.content-size2.btn-toggle 
+                                            span Инструкция по уходу
+                                            <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 8L7 2L13 8" stroke="#826754" stroke-width="1.5" stroke-linecap="round"/></svg>
+                                        p.content-size1 Стирка на щадящем режиме, температура воды не должна превышать 40 градусов. Сушка в расправленном виде.
+                .catalog 
+                    .container 
+                        .inner__caption
+                            h2.title-inner Сопутствующие товары
+                        .catalog__wrapper 
+                            .catalog__list.slick-catalog
+                                a.catalog__item 
+                                    .catalog__action-btn.catalog__sale
+                                        p 
+                                            span 30
+                                            i %
+
+                                    .catalog__action-btn.catalog__like 
+                                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+                                    img.catalog__picture(src="img/catalog/img1.jpg" alt="")
+                                    .block-move
+                                        p.catalog__name.content-size1 Шифон с цветами
+                                        .catalog__bottom 
+                                            .catalog__price.title-sub
+                                                span 550 ₽
+                                                span.catalog__price--old.content-size2 650 ₽
+                                            .catalog__size.content-size2 
+                                                span 1 М
+                                a.catalog__item 
+                                    .catalog__action-btn.catalog__like
+                                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+                                    img.catalog__picture(src="img/catalog/img2.jpg" alt="")
+                                    .block-move
+                                        p.catalog__name.content-size1 Хлопок белый Хлопок белый Хлопок белый Хлопок белый
+                                        .catalog__bottom 
+                                            .catalog__price.title-sub
+                                                span 550 ₽
+                                            .catalog__size.content-size2 
+                                                span 1 М
+                                a.catalog__item 
+                                    .catalog__action-btn.catalog__like 
+                                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+                                    img.catalog__picture(src="img/catalog/img3.jpg" alt="")
+                                    .block-move
+                                        p.catalog__name.content-size1 Лен бежевый
+                                        .catalog__bottom 
+                                            .catalog__price.title-sub
+                                                span 550 ₽
+                                                span.catalog__price--old.content-size2 650 ₽
+                                            .catalog__size.content-size2 
+                                                span 1 М
+                                a.catalog__item 
+                                    .catalog__action-btn.catalog__like 
+                                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+                                    img.catalog__picture(src="img/catalog/img4.jpg" alt="")
+                                    .block-move
+                                        p.catalog__name.content-size1 Атлас розовый
+                                        .catalog__bottom 
+                                            .catalog__price.title-sub
+                                                span 550 ₽
+                                            .catalog__size.content-size2 
+                                                span 1 М
+                                a.catalog__item 
+                                    .catalog__action-btn.catalog__like 
+                                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+                                    img.catalog__picture(src="img/catalog/img5.jpg" alt="")
+                                    .block-move
+                                        p.catalog__name.content-size1 Шифон в полоску
+                                        .catalog__bottom 
+                                            .catalog__price.title-sub
+                                                span 550 ₽
+                                            .catalog__size.content-size2 
+                                                span 1 М
+                                a.catalog__item 
+                                    .catalog__action-btn.catalog__like 
+                                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+                                    img.catalog__picture(src="img/catalog/img6.jpg" alt="")
+                                    .block-move
+                                        p.catalog__name.content-size1 Джакарт хаки
+                                        .catalog__bottom 
+                                            .catalog__price.title-sub
+                                                span 550 ₽
+                                            .catalog__size.content-size2 
+                                                span 1 М    
+                                a.catalog__item 
+                                    .catalog__action-btn.catalog__like 
+                                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+                                    img.catalog__picture(src="img/catalog/img6.jpg" alt="")
+                                    .block-move
+                                        p.catalog__name.content-size1 Джакарт хаки
+                                        .catalog__bottom 
+                                            .catalog__price.title-sub
+                                                span 550 ₽
+                                            .catalog__size.content-size2 
+                                                span 1 М    
+                                a.catalog__item 
+                                    .catalog__action-btn.catalog__like 
+                                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+                                    img.catalog__picture(src="img/catalog/img6.jpg" alt="")
+                                    .block-move
+                                        p.catalog__name.content-size1 Джакарт хаки
+                                        .catalog__bottom 
+                                            .catalog__price.title-sub
+                                                span 550 ₽
+                                            .catalog__size.content-size2 
+                                                span 1 М    
+                .catalog 
+                    .container 
+                        .inner__caption
+                            h2.title-inner Возможно, вам понравится
+                        .catalog__wrapper 
+                            .catalog__list.slick-catalog
+                                a.catalog__item 
+                                    .catalog__action-btn.catalog__sale
+                                        p 
+                                            span 30
+                                            i %
+
+                                    .catalog__action-btn.catalog__like 
+                                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+                                    img.catalog__picture(src="img/catalog/img1.jpg" alt="")
+                                    .block-move
+                                        p.catalog__name.content-size1 Шифон с цветами
+                                        .catalog__bottom
+                                            .catalog__price.title-sub
+                                                span 550 ₽
+                                                span.catalog__price--old.content-size2 650 ₽
+                                            .catalog__size.content-size2 
+                                                span 1 М
+                                a.catalog__item 
+                                    .catalog__action-btn.catalog__like
+                                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+                                    img.catalog__picture(src="img/catalog/img2.jpg" alt="")
+                                    .block-move
+                                        p.catalog__name.content-size1 Хлопок белый
+                                        .catalog__bottom
+                                            .catalog__price.title-sub
+                                                span 550 ₽
+                                            .catalog__size.content-size2 
+                                                span 1 М
+                                a.catalog__item 
+                                    .catalog__action-btn.catalog__like 
+                                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+                                    img.catalog__picture(src="img/catalog/img3.jpg" alt="")
+                                    .block-move
+                                        p.catalog__name.content-size1 Лен бежевый
+                                        .catalog__bottom
+                                            .catalog__price.title-sub
+                                                span 550 ₽
+                                                span.catalog__price--old.content-size2 650 ₽
+                                            .catalog__size.content-size2 
+                                                span 1 М
+                                a.catalog__item 
+                                    .catalog__action-btn.catalog__like 
+                                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+                                    img.catalog__picture(src="img/catalog/img4.jpg" alt="")
+                                    .block-move
+                                        p.catalog__name.content-size1 Атлас розовый
+                                        .catalog__bottom
+                                            .catalog__price.title-sub
+                                                span 550 ₽
+                                            .catalog__size.content-size2 
+                                                span 1 М
+                                a.catalog__item 
+                                    .catalog__action-btn.catalog__like 
+                                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+                                    img.catalog__picture(src="img/catalog/img5.jpg" alt="")
+                                    .block-move
+                                        p.catalog__name.content-size1 Шифон в полоску
+                                        .catalog__bottom
+                                            .catalog__price.title-sub
+                                                span 550 ₽
+                                            .catalog__size.content-size2 
+                                                span 1 М
+                                a.catalog__item 
+                                    .catalog__action-btn.catalog__like 
+                                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+                                    img.catalog__picture(src="img/catalog/img6.jpg" alt="")
+                                    .block-move
+                                        p.catalog__name.content-size1 Джакарт хаки
+                                        .catalog__bottom
+                                            .catalog__price.title-sub
+                                                span 550 ₽
+                                            .catalog__size.content-size2 
+                                                span 1 М    
+                                a.catalog__item 
+                                    .catalog__action-btn.catalog__like 
+                                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+                                    img.catalog__picture(src="img/catalog/img6.jpg" alt="")
+                                    .block-move
+                                        p.catalog__name.content-size1 Джакарт хаки
+                                        .catalog__bottom
+                                            .catalog__price.title-sub
+                                                span 550 ₽
+                                            .catalog__size.content-size2 
+                                                span 1 М    
+                                a.catalog__item 
+                                    .catalog__action-btn.catalog__like 
+                                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+                                    img.catalog__picture(src="img/catalog/img6.jpg" alt="")
+                                    .block-move
+                                        p.catalog__name.content-size1 Джакарт хаки
+                                        .catalog__bottom
+                                            .catalog__price.title-sub
+                                                span 550 ₽
+                                            .catalog__size.content-size2 
+                                                span 1 М    
+                .catalog 
+                    .container 
+                        .inner__caption
+                            h2.title-inner Вы смотрели
+                        .catalog__wrapper 
+                            ul.catalog__list.slick-catalog
+                                a.catalog__item 
+                                    .catalog__action-btn.catalog__sale
+                                        p 
+                                            span 30
+                                            i %
+                                    .catalog__action-btn.catalog__like 
+                                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+                                    img.catalog__picture(src="img/catalog/img1.jpg" alt="")
+                                    .block-move
+                                        p.catalog__name.content-size1 Шифон с цветами
+                                        .catalog__bottom
+                                            .catalog__price.title-sub
+                                                span 550 ₽
+                                                span.catalog__price--old.content-size2 650 ₽
+                                            .catalog__size.content-size2 
+                                                span 1 М
+                                a.catalog__item 
+                                    .catalog__action-btn.catalog__like
+                                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+                                    img.catalog__picture(src="img/catalog/img2.jpg" alt="")
+                                    .block-move
+                                        p.catalog__name.content-size1 Хлопок белый
+                                        .catalog__bottom
+                                            .catalog__price.title-sub
+                                                span 550 ₽
+                                            .catalog__size.content-size2 
+                                                span 1 М
+                                a.catalog__item 
+                                    .catalog__action-btn.catalog__like 
+                                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+                                    img.catalog__picture(src="img/catalog/img3.jpg" alt="")
+                                    .block-move
+                                        p.catalog__name.content-size1 Лен бежевый
+                                        .catalog__bottom
+                                            .catalog__price.title-sub
+                                                span 550 ₽
+                                                span.catalog__price--old.content-size2 650 ₽
+                                            .catalog__size.content-size2 
+                                                span 1 М
+                                a.catalog__item 
+                                    .catalog__action-btn.catalog__like 
+                                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+                                    img.catalog__picture(src="img/catalog/img4.jpg" alt="")
+                                    .block-move
+                                        p.catalog__name.content-size1 Атлас розовый
+                                        .catalog__bottom
+                                            .catalog__price.title-sub
+                                                span 550 ₽
+                                            .catalog__size.content-size2 
+                                                span 1 М
+                                a.catalog__item 
+                                    .catalog__action-btn.catalog__like 
+                                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+                                    img.catalog__picture(src="img/catalog/img5.jpg" alt="")
+                                    .block-move
+                                        p.catalog__name.content-size1 Шифон в полоску
+                                        .catalog__bottom
+                                            .catalog__price.title-sub
+                                                span 550 ₽
+                                            .catalog__size.content-size2 
+                                                span 1 М
+                                a.catalog__item 
+                                    .catalog__action-btn.catalog__like 
+                                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+                                    img.catalog__picture(src="img/catalog/img6.jpg" alt="")
+                                    .block-move
+                                        p.catalog__name.content-size1 Джакарт хаки
+                                        .catalog__bottom
+                                            .catalog__price.title-sub
+                                                span 550 ₽
+                                            .catalog__size.content-size2 
+                                                span 1 М    
+                                a.catalog__item 
+                                    .catalog__action-btn.catalog__like 
+                                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+                                    img.catalog__picture(src="img/catalog/img6.jpg" alt="")
+                                    .block-move
+                                        p.catalog__name.content-size1 Джакарт хаки
+                                        .catalog__bottom
+                                            .catalog__price.title-sub
+                                                span 550 ₽
+                                            .catalog__size.content-size2 
+                                                span 1 М    
+                                a.catalog__item 
+                                    .catalog__action-btn.catalog__like 
+                                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1" stroke="#F3EBE8"/><circle cx="23" cy="23" r="18" fill="#F3EBE8"/><path d="M14.5866 15.7615C15.6219 14.6256 17.0425 14 18.587 14C19.7415 14 20.7988 14.3692 21.7296 15.0973C22.1992 15.4649 22.6248 15.9145 23 16.4393C23.3751 15.9147 23.8008 15.4649 24.2706 15.0973C25.2012 14.3692 26.2585 14 27.413 14C28.9575 14 30.3782 14.6256 31.4135 15.7615C32.4365 16.8842 33 18.4179 33 20.0803C33 21.7914 32.3697 23.3576 31.0164 25.0096C29.8057 26.4873 28.0658 27.9873 26.0508 29.7243C25.3628 30.3175 24.5829 30.9899 23.7732 31.7061C23.5592 31.8957 23.2847 32 23 32C22.7154 32 22.4408 31.8957 22.2271 31.7064C21.4174 30.99 20.637 30.3173 19.9487 29.7238C17.9341 27.9872 16.1941 26.4873 14.9835 25.0094C13.6302 23.3576 13 21.7914 13 20.0802C13 18.4179 13.5635 16.8842 14.5866 15.7615Z" stroke="#826754" stroke-width="1.5"/></svg>
+                                    img.catalog__picture(src="img/catalog/img6.jpg" alt="")
+                                    .block-move
+                                        p.catalog__name.content-size1 Джакарт хаки
+                                        .catalog__bottom
+                                            .catalog__price.title-sub
+                                                span 550 ₽
+                                            .catalog__size.content-size2 
+                                                span 1 М    
+
+
+        include modules/footer.pug
+        include modules/script.pug

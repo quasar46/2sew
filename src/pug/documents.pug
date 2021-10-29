@@ -1,0 +1,47 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header.pug
+
+        .wrapper 
+            .breadcrumbs.container 
+                ul.breadcrumbs__list.content-size3
+                    li 
+                        a(href="index.html") Главная
+                    li 
+                        img(src="img/arrow-breadcrumbs.svg" alt="Стрелка")
+                    li 
+                        a.breadcrumbs__current Документы
+
+            .documents.inner
+                .inner__caption.container
+                    h2.title-inner Документы
+                .documents__wrapper.container__min 
+                    .documents__item 
+                        p.payment__title.title-sub.btn-toggle 
+                            span Политика конфедициальности
+                            <svg class="minus" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12.9707" r="11.5" transform="rotate(90 12 12.9707)" stroke="#826754"/><path d="M6.34315 12.9694L17.6569 12.9694" stroke="#826754" stroke-linecap="round"/></svg>
+                            <svg class="plus current" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12.9707" r="11.5" transform="rotate(90 12 12.9707)" stroke="#826754"/><path d="M11.9986 18.6276L11.9987 7.31385" stroke="#826754" stroke-linecap="round"/><path d="M6.34315 12.9694L17.6569 12.9694" stroke="#826754" stroke-linecap="round"/></svg>
+                        .text-block.content-size1 
+                            p 1. Общие положения 
+                            p 1.1. Настоящее Положение о конфиденциальности (далее – «Положение») регламентируется Конституцией Российской Федерации, Федеральным законом «Об информации, информационных технологиях и о защите информации» № 149-ФЗ от 27.07.2006 года, Федеральным законом «О персональных данных» № 152-ФЗ от 27.07.2006 года и другими нормативно правовыми актами.
+                            p 1.2. Основные понятия, используемые в Положении:
+                            p ПРОДАВЕЦ / ОПЕРАТОР — ИП Квасов Григорий Владимирович (ИНН 463232164444, ОГРНИП 318463200028665), адрес регистрации: г. Курск, ул.Кати Зеленко, д.7
+                            p ИНТЕРНЕТ-МАГАЗИН — Интернет-сайт, принадлежащий Продавцу, расположенный в сети интернет по адресу: tkaniorg.ru, где представлены Товары, предлагаемые Продавцами для приобретения, а также условия оплаты и доставки Товаров Покупателям.
+                    .documents__item 
+                        p.payment__title.title-sub.btn-toggle 
+                            span Договор оферты
+                            <svg class="minus" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12.9707" r="11.5" transform="rotate(90 12 12.9707)" stroke="#826754"/><path d="M6.34315 12.9694L17.6569 12.9694" stroke="#826754" stroke-linecap="round"/></svg>
+                            <svg class="plus current" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12.9707" r="11.5" transform="rotate(90 12 12.9707)" stroke="#826754"/><path d="M11.9986 18.6276L11.9987 7.31385" stroke="#826754" stroke-linecap="round"/><path d="M6.34315 12.9694L17.6569 12.9694" stroke="#826754" stroke-linecap="round"/></svg>
+                        .text-block.content-size1 
+                            p 1. Общие положения 
+                            p 1.1. Настоящее Положение о конфиденциальности (далее – «Положение») регламентируется Конституцией Российской Федерации, Федеральным законом «Об информации, информационных технологиях и о защите информации» № 149-ФЗ от 27.07.2006 года, Федеральным законом «О персональных данных» № 152-ФЗ от 27.07.2006 года и другими нормативно правовыми актами.
+                            p 1.2. Основные понятия, используемые в Положении:
+                            p ПРОДАВЕЦ / ОПЕРАТОР — ИП Квасов Григорий Владимирович (ИНН 463232164444, ОГРНИП 318463200028665), адрес регистрации: г. Курск, ул.Кати Зеленко, д.7
+                            p ИНТЕРНЕТ-МАГАЗИН — Интернет-сайт, принадлежащий Продавцу, расположенный в сети интернет по адресу: tkaniorg.ru, где представлены Товары, предлагаемые Продавцами для приобретения, а также условия оплаты и доставки Товаров Покупателям.
+
+
+
+        include modules/footer.pug
+        include modules/script.pug

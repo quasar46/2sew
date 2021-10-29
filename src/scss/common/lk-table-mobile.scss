@@ -1,0 +1,125 @@
+.lk__table.lk-table-mobile {
+  display: none;
+  @media (max-width: 1023px) {
+    display: block;
+  }
+}
+
+.lk__table.lk-table {
+  display: block;
+  @media (max-width: 1023px) {
+    display: none;
+  }
+}
+
+.lk-table-mobile__item {
+  position: relative;
+  padding: 20px 0;
+  border-top: 1px solid #826754;
+  border-bottom: 1px solid #826754;
+  &:not(:last-child) {
+    border-bottom: 0;
+  }
+  button {
+    @media (max-width: 767px) {
+      width: 32px;
+      height: 32px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  &.active {
+    .lk-history__show {
+      button {
+        display: block;
+        &.current {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.like-table-mobile__description {
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    width: calc(100% / 2);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    &.like-table-mobile__action {
+      width: 100%;
+      @media (max-width: 1023px) {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+      @media (max-width: 767px) {
+        flex-direction: column;
+      }
+    }
+  }
+  @media (max-width: 1023px) {
+    flex-wrap: nowrap;
+    padding-bottom: 44px;
+  }
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+  }
+}
+
+.lk-table__order {
+  margin-bottom: 16px;
+  @media (max-width: 1023px) {
+    font-size: 16px;
+  }
+}
+
+.lk-table-mobile__title {
+  color: $colorBrown2;
+  font-size: 14px;
+}
+
+.lk-table-mobile__value {
+  font-size: 16px;
+}
+
+.lk-table-mobile__title {
+  margin-bottom: 4px;
+  @media (max-width: 767px) {
+    margin-bottom: 8px;
+  }
+}
+
+.lk-table-mobile__add {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  button {
+    padding: 0;
+    // width: 32px;
+    // height: 32px;
+    width: 24px;
+    height: 24px; //lk
+    background-color: transparent;
+    border: none;
+  }
+}
+
+.lk-history__show {
+  button {
+    width: 24px;
+    height: 24px;
+    @media (max-width: 767px) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}

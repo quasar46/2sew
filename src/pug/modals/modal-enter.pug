@@ -1,0 +1,21 @@
+.wrapper__modal#enter-modal
+    .modal.modal__enter
+        button.modal__closed#closed-modal
+            img(src="img/closed-modal.svg" alt="")
+        form.modal__content#commentForm
+            h2.modal__title.title-sub Вход
+            fieldset.form
+                .input-container.ic2
+                    input.input-container__input(type='text' placeholder=' ')
+                    .cut
+                    label.placeholder(for='').input-container__label Email
+                .input-container.ic2
+                    input.input-container__input(type='text' placeholder=' ')
+                    .cut
+                    label.placeholder(for='').input-container__label Пароль
+
+                .modal__text.text-block
+                    a(href="").modal__link.content-size3 Восстановление пароля
+                .btn-round__wrapper 
+                    button.btn-round(type="submit" value="Войти") Войти <i></i>
+                    a(href="").btn-round.btn-round--notactive Регистрация

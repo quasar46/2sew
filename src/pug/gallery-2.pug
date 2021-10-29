@@ -1,0 +1,76 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header.pug
+
+        .wrapper
+
+            .breadcrumbs.container 
+                ul.breadcrumbs__list.content-size3
+                    li 
+                        a(href="index.html") Главная
+                    li 
+                        img(src="img/arrow-breadcrumbs.svg" alt="Стрелка")
+                    li 
+                        a.breadcrumbs__current Галерея
+
+            .gallery-page.container.inner 
+                .inner__caption.inner__caption--center
+                    h2.title-inner Галерея
+                //- .catalog-content__top-sort
+                .catalog-content__top
+                    .catalog-content__top-sort.catalog-content__top-sort--mode
+                        .content-size2.btn-toggle-sort
+                            span Сортировка
+                            <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 1L7 7L1 0.999999" stroke="#826754" stroke-linecap="round"/></svg>
+                            //- catalog-sorting
+                            .catalog__sorting.catalog-sorting
+                                ul.catalog-sorting__list 
+                                    li 
+                                        p.catalog-sorting__item.active По популярности
+                                    li 
+                                        p.catalog-sorting__item По обновлению
+                                    li 
+                                        p.catalog-sorting__item По цене min
+                                    li 
+                                        p.catalog-sorting__item По цене max
+
+                    .catalog-content__top-btns
+                        a 
+                            button 
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="11" height="11" fill="#826754"/><rect y="14" width="11" height="11" fill="#826754"/><rect x="14" y="14" width="11" height="11" fill="#826754"/><rect x="14" width="11" height="11" fill="#826754"/></svg>
+                        a(href="gallery.html") 
+                            button 
+                                <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="8" height="7" fill="#F3EBE8"/><rect y="9" width="8" height="7" fill="#F3EBE8"/><rect y="18" width="8" height="7" fill="#F3EBE8"/><rect x="10" width="7" height="7" fill="#F3EBE8"/><rect x="10" y="9" width="7" height="7" fill="#F3EBE8"/><rect x="10" y="18" width="7" height="7" fill="#F3EBE8"/><rect x="19" width="7" height="7" fill="#F3EBE8"/><rect x="19" y="9" width="7" height="7" fill="#F3EBE8"/><rect x="19" y="18" width="7" height="7" fill="#F3EBE8"/></svg>
+
+
+                .gallery-page__catalog 
+                    .gallery-page__item.gallery-page__item--mode
+                        a(href="img/gallery-catalog/img1-b.png" data-fancybox="gallery" data-caption="caption") 
+                            img(src="img/gallery-catalog/img1-b.png" alt="")
+                    .gallery-page__item.gallery-page__item--mode
+                        a(href="img/gallery-catalog/img1-b.png" data-fancybox="gallery" data-caption="caption") 
+                            img(src="img/gallery-catalog/img2-b.png" alt="")
+                    .gallery-page__item.gallery-page__item--mode
+                        a(href="img/gallery-catalog/img1-b.png" data-fancybox="gallery" data-caption="caption") 
+                            img(src="img/gallery-catalog/img3-b.png" alt="")
+                    .gallery-page__item.gallery-page__item--mode
+                        a(href="img/gallery-catalog/img1-b.png" data-fancybox="gallery" data-caption="caption") 
+                            img(src="img/gallery-catalog/img1-b.png" alt="")
+                    .gallery-page__item.gallery-page__item--mode
+                        a(href="img/gallery-catalog/img1-b.png" data-fancybox="gallery" data-caption="caption") 
+                            img(src="img/gallery-catalog/img2-b.png" alt="")
+                    .gallery-page__item.gallery-page__item--mode
+                        a(href="img/gallery-catalog/img1-b.png" data-fancybox="gallery" data-caption="caption") 
+                            img(src="img/gallery-catalog/img3-b.png" alt="")
+                    .catalog__item.link__show-more
+                        button Показать еще
+
+                include blocks/pagination.pug
+
+
+
+        include modules/footer.pug
+        script(src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js")
+        include modules/script.pug

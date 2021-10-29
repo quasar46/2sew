@@ -1,0 +1,32 @@
+doctype html 
+html(lang="ru")
+    include modules/head
+body
+    include modules/header.pug
+
+    .wrapper
+        .breadcrumbs.container 
+            ul.breadcrumbs__list.content-size3
+                li 
+                    a(href="index.html") Главная
+                li 
+                    img(src="img/arrow-breadcrumbs.svg" alt="Стрелка")
+                li 
+                    a.breadcrumbs__current Корзина
+
+        .basket
+            .container.inner 
+                .basket__caption
+                    h2.title-inner Корзина
+                .basket__empty.container__min
+                    .inner__caption.inner__caption--center
+                        h2.title-sub Корзина пуста!
+                    .content-size1.tac.text-block  
+                        p В корзине пока ничего нет, перейдите в каталог для выбора товаров
+                    .btn-round__wrapper
+                        a(href="catalog.html").btn-round В каталог <i></i> 
+
+
+
+    include modules/footer.pug
+    include modules/script.pug

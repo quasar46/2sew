@@ -1,0 +1,22 @@
+.logo {
+  display: none;
+  width: 100%;
+  flex: 1 0 auto;
+  max-width: 208px;
+  &.active {
+    display: block;
+  }
+  @media (max-width: 1919px) {
+    max-width: 178px;
+  }
+  @media (max-width: 1365px) {
+    max-width: 148px;
+  }
+  @media (max-width: 1023px) {
+    max-width: 133px;
+  }
+  @media (max-width: 767px) {
+    max-width: 127px;
+    order: 0;
+  }
+}

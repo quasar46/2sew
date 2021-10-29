@@ -1,0 +1,164 @@
+.team-block {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 1023px) {
+    flex-direction: column;
+  }
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 423px;
+    height: 408px;
+    background-image: url("../img/shtamp-sew.svg");
+    background-size: cover;
+    right: -200px;
+    top: -200px;
+    z-index: -1;
+    @media (max-width: 1919px) {
+      width: 311px;
+      height: 300px;
+      right: -100px;
+      top: -100px;
+    }
+    @media (max-width: 1365px) {
+      width: 228px;
+      height: 220px;
+    }
+    @media (max-width: 1023px) {
+      display: none;
+    }
+  }
+}
+
+.team-block__text {
+  max-width: 452px;
+  width: 100%;
+  margin-right: 118px;
+  font-family: $fontTitle;
+  font-weight: 400;
+  font-size: 22px;
+  @media (max-width: 1919px) {
+    max-width: 253px;
+    margin-right: 49px;
+    font-size: 20px;
+  }
+  @media (max-width: 1365px) {
+    font-size: 18px;
+  }
+  @media (max-width: 1023px) {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.team-block__photo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.team-block__item {
+  display: flex;
+  flex-direction: column;
+  // flex-wrap: wrap;
+  max-width: calc(100% / 2 - 15px);
+  flex: 1 0 auto;
+  width: 100%;
+  margin-bottom: 20px;
+  align-items: stretch;
+
+  @media (max-width: 1919px) {
+    max-width: calc(100% / 2 - 12px);
+  }
+  @media (max-width: 767px) {
+    max-width: calc(100% / 2 - 7px);
+  }
+}
+
+.team-block__picture {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.team-block__name {
+  margin-bottom: 15px;
+  flex: 1;
+  @media (max-width: 1365px) {
+    margin-bottom: 10px;
+  }
+}
+
+.team-block__bottom {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  border-top: 1px solid #826754;
+  border-bottom: 1px solid #826754;
+  overflow: hidden;
+  p {
+    padding: 15px 0;
+    @media (max-width: 767px) {
+      padding: 8px 0;
+    }
+  }
+  img {
+    margin: 0 12px;
+    @media (max-width: 767px) {
+      margin: 0 8px;
+      max-width: 35px;
+    }
+  }
+  @media (max-widht: 767px) {
+    height: 70px;
+  }
+}
+
+.team-block__bottom-col {
+  display: flex;
+  align-items: center;
+  &:first-child {
+    border-right: 1px solid #826754;
+  }
+  &:last-child {
+    flex: 1 0 auto;
+    max-width: 69px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    @media (max-width: 1919px) {
+      max-width: 60px;
+    }
+    @media (max-width: 1023px) {
+      max-width: 56px;
+    }
+    @media (max-width: 767px) {
+      max-width: 51px;
+    }
+  }
+  img {
+    margin: 0;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  a {
+    display: block;
+    width: 45px;
+    height: 45px;
+    @media (max-width: 1365px) {
+      width: 40px;
+      height: 40px;
+    }
+    @media (max-width: 1023px) {
+      width: 36px;
+      height: 36px;
+    }
+    @media (max-width: 767px) {
+      width: 35px;
+      height: 35px;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.documents__item {
+  border-bottom: 1px solid #826754;
+  padding: 50px 0;
+  .text-block {
+    margin-bottom: 0;
+    margin-top: 40px;
+    display: none;
+    @media (max-width: 767px) {
+      margin-top: 20px;
+    }
+  }
+  @media (max-width: 767px) {
+    padding: 25px 0;
+  }
+  &:first-child {
+    border-top: 1px solid #826754;
+  }
+}

@@ -1,0 +1,81 @@
+.lk {
+  .container__min.tabs {
+    @media (max-width: 767px) {
+      padding: 0;
+    }
+  }
+}
+
+.lk__caption {
+  display: flex;
+  p {
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 767px) {
+    width: 360px;
+    overflow: auto;
+  }
+}
+
+.lk__action {
+  display: flex;
+  flex-direction: column;
+  a {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: $colorBrown2;
+    font-weight: 500;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @media (max-width: 1023px) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.lk__change-password-inputs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  input {
+    border: none;
+    border-bottom: 1px solid #826754;
+    padding: 10px 0;
+    margin-right: 25px;
+    flex: 0 1 auto;
+    width: 100%;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.lk__change-password {
+  display: none;
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  input[type="submit"] {
+    border: none;
+    background-color: transparent;
+    align-self: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: $colorBrown2;
+    font-weight: 500;
+  }
+}
+
+.lk__change-password-succcess {
+  background-color: $colorBrown3;
+  min-height: 61px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  margin-bottom: 30px;
+  font-size: 17px;
+}

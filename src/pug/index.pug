@@ -1,0 +1,116 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+
+
+        include modules/header.pug
+
+        .wrapper 
+            span.cursor-move
+            .hero.inner 
+                h1.hero__title.title-main Новое поступление
+                .hero__slicks.slick-hero
+                    picture 
+                        source(media="(max-width: 767px)" srcset="img/hero/img1-mobile.jpg")
+                        source(media="(min-width: 768px)" srcset="img/hero/img1.jpg")
+                        img.hero__picture(src="img/hero/img1.jpg")
+                    picture 
+                        source(media="(max-width: 767px)" srcset="img/hero/img1-mobile.jpg")
+                        source(media="(min-width: 768px)" srcset="img/hero/img1.jpg")
+                        img.hero__picture(src="img/hero/img1.jpg")
+                    picture 
+                        source(media="(max-width: 767px)" srcset="img/hero/img1-mobile.jpg")
+                        source(media="(min-width: 768px)" srcset="img/hero/img1.jpg")
+                        img.hero__picture(src="img/hero/img1.jpg")
+                    picture 
+                        source(media="(max-width: 767px)" srcset="img/hero/img1-mobile.jpg")
+                        source(media="(min-width: 768px)" srcset="img/hero/img1.jpg")
+                        img.hero__picture(src="img/hero/img1.jpg")
+
+            include blocks/catalog.pug
+
+            .categories.inner 
+                .container 
+                    .categories__wrapper 
+                        a.categories__item.categories__item--a(href="#")
+                            p.title-inner Ткани
+                        a.categories__item.categories__item--b(href="#")
+                            p.title-inner Выкройки
+                        a.categories__item.categories__item--c(href="#")
+                            p.title-inner Фурнитура
+
+            include blocks/catalog.pug
+
+            .articles.inner 
+                .container 
+                    .inner__caption.inner__caption--center
+                        h2.title-inner Статьи
+                    .articles__wrapper 
+                        a.articles__item.articles__item--a(href="#") 
+                            picture 
+                                source(media="(max-width: 767px)" srcset="img/articles/img1-mobile.png")
+                                source(media="(max-width: 1023px)" srcset="img/articles/img1-tablet.png")
+                                source(media="(min-width: 1024px)" srcset="img/articles/img1.png")
+                                img.articles__picture(src="img/articles/img1.png")
+                            .articles__bottom.block-move 
+                                .articles__date 
+                                    p.content-size2 25.07.2021
+                                .articles__name
+                                    p.title-sub Тонкости подбора фурнитуры
+                        a.articles__item.articles__item--b(href="#") 
+                            picture 
+                                source(media="(max-width: 767px)" srcset="img/articles/img2-mobile.png")
+                                source(media="(max-width: 1023px)" srcset="img/articles/img2-tablet.png")
+                                source(media="(min-width: 1024px)" srcset="img/articles/img2.png")
+                                img.articles__picture(src="img/articles/img2.png")
+                            .articles__bottom.block-move 
+                                .articles__date 
+                                    p.content-size2 25.07.2021
+                                .articles__name 
+                                    p.title-sub Тонкости подбора фурнитуры
+                        a.articles__item.articles__item--c(href="#")
+                            picture 
+                                source(media="(max-width: 767px)" srcset="img/articles/img3-mobile.png")
+                                source(media="(max-width: 1023px)" srcset="img/articles/img3-tablet.png")
+                                source(media="(min-width: 1024px)" srcset="img/articles/img3.png")
+                                img.articles__picture(src="img/articles/img3.png")
+                            .articles__bottom.block-move 
+                                .articles__date 
+                                    p.content-size2 25.07.2021
+                                .articles__name 
+                                    p.title-sub Тонкости подбора фурнитуры
+
+                    .btn-round__wrapper
+                        a.btn-round(href="articles-page.html") Смотреть все <i></i>
+
+
+            include blocks/catalog.pug
+
+            .gallery.inner 
+                .container 
+                    .inner__caption.inner__caption--center 
+                        h2.title-inner Галлерея 
+                    .gallery__wrapper 
+                        a.galley__item.galley__item--a(href="")
+                            img(src="img/gallery/preview-1.png" alt="")
+                        a.galley__item.galley__item--b(href="")
+                            img(src="img/gallery/preview-2.png" alt="")
+                        a.galley__item.galley__item--c(href="")
+                            img(src="img/gallery/preview-3.png" alt="")
+                        a.galley__item.galley__item--d(href="")
+                            img(src="img/gallery/preview-4.png" alt="")
+                        a.galley__item.galley__item--e(href="")
+                            img(src="img/gallery/preview-5.png" alt="")
+                        a.galley__item.galley__item--f(href="")
+                            img(src="img/gallery/preview-6.png" alt="")
+                    .btn-round__wrapper
+                        a(href="gallery.html").btn-round Смотреть все <i></i>
+
+
+        include modules/footer
+        include modals/modal-questions.pug
+        include blocks/info-message.pug
+        include modals/modal-1.pug
+        include modals/modal-2.pug
+        include modules/script.pug

@@ -1,0 +1,125 @@
+.lk-history {
+  @media (max-width: 1023px) {
+    display: none;
+  }
+}
+
+.lk-history__row {
+  display: flex;
+  height: 84px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: $fontBase;
+  border-bottom: 1px solid #826754;
+  &--caption {
+    color: $colorBrown2;
+    border-top: 1px solid #826754;
+    .lk-history__col {
+      border-right: 1px solid #826754;
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+  @media (max-width: 1919px) {
+    height: 80px;
+  }
+  @media (max-width: 1365px) {
+    font-size: 15px;
+  }
+  &.active {
+    border-bottom: none;
+  }
+}
+
+.lk-history__col {
+  width: calc(100% / 5);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  button {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    margin-left: 12px;
+    cursor: pointer;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  .lk-history__title {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  @media (max-width: 1919px) {
+    padding-left: 20px;
+  }
+  &:last-child {
+    max-width: 20%;
+    width: 100%;
+    flex: 1 0 auto;
+    @media (max-width: 1365px) {
+      max-width: 23%;
+    }
+  }
+}
+
+.lk-history__show {
+  margin-left: auto;
+  button {
+    display: none;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    &.current {
+      display: block;
+    }
+    @media (max-width: 1023px) {
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      position: absolute;
+    }
+  }
+}
+
+.lk-history__row {
+  &.active {
+    .lk-history__show {
+      button {
+        display: block;
+        &.current {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.lk-history__row-content {
+  display: none;
+  &.active {
+    display: flex;
+    flex-direction: column;
+  }
+  .basket-item {
+    border: none;
+    &:last-child {
+      border-bottom: 1px solid #826754;
+      @media (max-width: 1023px) {
+        border-bottom: 0;
+      }
+    }
+  }
+}
+
+.lk-history__buttons {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,101 @@
+.gallery__wrapper {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 40px;
+  grid-gap: 30px;
+  grid-template-columns: 272px 271px 271px 271px;
+  grid-template-rows: 196px 271px 270px;
+  grid-template-areas:
+    "item1 item2 item2 item3"
+    "item1 item4 item6 item6"
+    "item5 item5 item6 item6";
+  @media (max-width: 1919px) {
+    grid-gap: 20px;
+    grid-template-columns: 181px 181px 181px 181px;
+    grid-template-rows: 131px 180px 180px;
+  }
+  @media (max-width: 1249px) {
+    grid-gap: 15px;
+    grid-template-columns: 163px 174px 174px 173px;
+    grid-template-rows: 118px 165px 168px;
+  }
+  @media (max-width: 1023px) {
+    grid-gap: 20px;
+    grid-template-columns: 232px 232px;
+    grid-template-rows: 173px 231px 228px;
+    grid-template-areas:
+      "item1 item3"
+      "item1 item4"
+      "item5 item5";
+  }
+  @media (max-width: 767px) {
+    // margin-bottom: 30px;
+    margin-bottom: 0;//index
+    grid-gap: 17px;
+    grid-template-columns: 155px 155px;
+    grid-template-rows: 180px 180px;
+    grid-template-areas:
+      "item1 item3"
+      "item4 item5";
+  }
+}
+
+.galley__item {
+  &--a {
+    position: relative;
+    grid-area: item1;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 235px;
+      height: 235px;
+      left: -102px;
+      top: -102px;
+      background-size: cover;
+      background-image: url("../img/shtamp.svg");
+      z-index: -1;
+      @media (max-width: 1919px) {
+        width: 155px;
+        height: 155px;
+        left: -65px;
+        top: -65px;
+      }
+      @media (max-width: 1249px) {
+        width: 130px;
+        height: 130px;
+        top: -50px;
+        left: -60px;
+      }
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+  }
+  &--b {
+    grid-area: item2;
+    @media (max-width: 1023px) {
+      display: none;
+    }
+  }
+  &--c {
+    grid-area: item3;
+  }
+  &--d {
+    grid-area: item4;
+  }
+  &--e {
+    grid-area: item5;
+  }
+  &--f {
+    grid-area: item6;
+    @media (max-width: 1023px) {
+      display: none;
+    }
+  }
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}

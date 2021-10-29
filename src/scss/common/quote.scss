@@ -1,0 +1,85 @@
+.quote {
+  position: relative;
+  max-width: 574px;
+  margin: 0 auto;
+  background-color: $colorBrown3;
+  padding: 40px 30px;
+  font-style: italic;
+  //   margin-bottom: 100px;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1px;
+    width: 80%;
+    background-color: #826754;
+    @media (max-width: 1365px) {
+      top: -15px;
+    }
+    @media (max-width: 767px) {
+      top: -20px;
+    }
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1px;
+    width: 80%;
+    background-color: #826754;
+    @media (max-width: 1365px) {
+      bottom: -15px;
+    }
+  }
+  @media (max-width: 1919px) {
+    padding: 35px 30px;
+  }
+  @media (max-width: 1023px) {
+    max-width: 100%;
+    padding: 30px 25px;
+  }
+  &--mode {
+    background-color: $colorBlue;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      background-image: url("../img/important.svg");
+      width: 45px;
+      height: 45px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: transparent;
+      @media (max-width: 1023px) {
+        width: 36px;
+        height: 36px;
+      }
+      @media (max-width: 767px) {
+        width: 35px;
+        height: 35px;
+      }
+    }
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.quote__author {
+  color: $colorBrown2;
+  font-style: normal;
+  text-align: right;
+  margin-top: 30px;
+  @media (max-width: 1919px) {
+    margin-top: 20px;
+  }
+  @media (max-width: 1023px) {
+    margin-top: 10px;
+  }
+}

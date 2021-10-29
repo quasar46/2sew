@@ -1,0 +1,12 @@
+.catalog-main {
+  display: flex;
+  @media (max-width: 767px) {
+    padding-top: 35px;
+  }
+}
+
+.catalog-main__aside-block {
+  .btn-toggle {
+    color: $colorBrown2;
+  }
+}

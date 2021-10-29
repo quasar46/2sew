@@ -1,0 +1,65 @@
+.btn-round {
+  position: relative;
+  min-width: 100px;
+  background-color: transparent;
+  text-align: center;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $colorBrown2;
+  font-size: 15px;
+  border: none;
+  z-index: 100;
+  i {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: $colorBlue;
+    transition: all 0.3s;
+  }
+  input {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $colorBrown2;
+    font-weight: 500;
+    @media (max-width: 767px) {
+      font-size: 15px;
+    }
+  }
+  @media (max-width: 1023px) {
+    padding: 17px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
+}
+
+.btn-round__wrapper {
+  display: flex;
+  justify-content: center;
+  &--mobile {
+    display: none;
+    @media (max-width: 767px) {
+      display: flex;
+    }
+  }
+  &--mode {
+    padding: 0;
+    .btn-round {
+      @media (max-width: 1919px) {
+        padding: 13px;
+      }
+    }
+  }
+}

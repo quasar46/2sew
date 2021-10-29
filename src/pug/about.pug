@@ -1,0 +1,104 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header.pug
+        .wrapper
+            .breadcrumbs.container 
+                ul.breadcrumbs__list.content-size3
+                    li 
+                        a(href="index.html") Главная
+                    li 
+                        img(src="img/arrow-breadcrumbs.svg" alt="Стрелка")
+                    li 
+                        a.breadcrumbs__current О нас
+
+
+            .about.container.inner
+                .inner__picture
+                    h2.inner__title О нас
+                    img(src="img/inner-pictures/about.png" alt="")
+                .container__min
+                    h2.inner__title.inner__title--mode О нас
+                .inner.container__min 
+                    .text-block.about__text-block 
+                        p Наш интернет-магазин tkaniorg.ru для тех, кто любит шитье и все, что с ним связано.  У нас представлен широкий ассортимент трикотажа (футер, кулирка, интерлок, рибана, капитоний, кашкорсе) и большой выбор тканей (плюш, хлопок, фатин, замша, флис, пальтовые ткани). Здесь Вы так же сможете найти швейную фурнитуру, журналы, кружево и термотрансферы. Мы — узнаваемая марка в городе Курске: более ста человек посещает наш магазин еженедельно. Мы гордимся своей дружбой с клиентами и большим количеством постоянных покупателей.
+
+                    ul.pictures-row 
+                        li
+                            img(src="img/about/img1.png" alt="")
+                        li
+                            img(src="img/about/img2.png" alt="")
+
+                    .text-block.about__text-block
+                        p Наш интернет-магазин создан для того, чтобы Вы смогли быстро и удобно найти и заказать именно тот товар, который Вам необходим, и получить свой заказ в кратчайшие сроки. Мы нацелены на развитие и долгосрочное сотрудничество с нашими покупателями, поэтому предлагаем Вам широкий ассортимент трикотажа и ткани, быстрый сбор и отправку заказа, постоянное обновление ассортимента для постоянных клиентов, а также акции.
+
+                    .btn-round__wrapper
+                        a.btn-round(href="catalog.html") В каталог <i></i>
+
+                .inner.container__min
+                    .inner__caption.inner__caption--center
+                        h2.title-inner В цифрах
+                    .numbers
+                        ul.numbers__list
+                            li
+                                p.numbers__caption.title-sub 100 <span>%</span>
+                                p.content-size1 отача предпочтения только натуральным и экологичным материалам
+                            li 
+                                p.numbers__caption.title-sub <span>с</span> 2010
+                                p.content-size1 изготовляваем из качественного сырья на современном оборудовании
+                            li 
+                                p.numbers__caption.title-sub <span>х</span> 2
+                                p.content-size1 наши ткани подходят для одежды не только взрослой, но и детской, в том числе новорожденного ассортимента.
+                            li 
+                                p.numbers__caption.title-sub <span><</span> 5 000
+                                p.content-size1 счастливых покупателей, довольных нашим асортиментом и качеством.
+
+                .inner.container__min
+                    .inner__caption.inner__caption--center
+                        h2.title-inner Команда
+                    .about__team.team-block
+                        .team-block__text
+                            p Мы - команда профессионалов. Обладаем высокими знаниями в швейном деле . В своей работе используем индивидуальный подход к каждому покупателю, предоставляем необходимые рекомендации.
+                        .team-block__photo 
+                            .team-block__item 
+                                img(src="img/team/img1.png" alt="").team-block__picture 
+                                p.team-block__name.content-size1 Мари Петрова
+                                .team-block__bottom
+                                    .team-block__bottom-col 
+                                        p.content-size2 Создатель и директор магазина
+                                    .team-block__bottom-col 
+                                        a(href="#") 
+                                            img(src="img/vk.svg" alt="")
+                            .team-block__item 
+                                img(src="img/team/img1.png" alt="").team-block__picture 
+                                p.team-block__name.content-size1 Мари Петрова
+                                .team-block__bottom
+                                    .team-block__bottom-col 
+                                        p.content-size2 Создатель и директор магазина Создатель и директор магазина
+                                    .team-block__bottom-col 
+                                        a(href="#") 
+                                            img(src="img/vk.svg" alt="")
+                            .team-block__item 
+                                img(src="img/team/img1.png" alt="").team-block__picture 
+                                p.team-block__name.content-size1 Мари Петрова Мари Петрова Мари Петрова
+                                .team-block__bottom
+                                    .team-block__bottom-col 
+                                        p.content-size2 Создатель и директор магазина
+                                    .team-block__bottom-col 
+                                        a(href="#") 
+                                            img(src="img/vk.svg" alt="")
+                            .team-block__item 
+                                img(src="img/team/img1.png" alt="").team-block__picture 
+                                p.team-block__name.content-size1 Мари Петрова
+                                .team-block__bottom
+                                    .team-block__bottom-col 
+                                        p.content-size2 Создатель и директор магазина
+                                    .team-block__bottom-col 
+                                        a(href="#") 
+                                            img(src="img/vk.svg" alt="")
+
+
+
+        include modules/footer.pug
+        include modules/script.pug

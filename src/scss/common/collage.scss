@@ -1,0 +1,73 @@
+.collage {
+  position: relative;
+  display: flex;
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 423px;
+    height: 408px;
+    background-image: url("../img/shtamp-sew.svg");
+    background-size: cover;
+    right: -200px;
+    top: -200px;
+    z-index: -1;
+    @media (max-width: 1919px) {
+      width: 311px;
+      height: 300px;
+      right: -100px;
+      top: -100px;
+    }
+    @media (max-width: 1365px) {
+      width: 228px;
+      height: 220px;
+    }
+    @media (max-width: 1023px) {
+      display: none;
+    }
+  }
+}
+
+.collage__col {
+  &:first-child {
+    display: flex;
+    flex-direction: column;
+    margin-right: 28px;
+    img {
+      margin-bottom: 17px;
+      &:last-child {
+        margin-bottom: 0;
+        @media (max-width: 767px) {
+          margin-bottom: 16px;
+        }
+      }
+      @media (max-width: 1919px) {
+        margin-bottom: 11px;
+      }
+      @media (max-width: 1365px) {
+        margin-bottom: 10px;
+      }
+      @media (max-width: 1023px) {
+        margin-bottom: 5px;
+      }
+      @media (max-width: 767px) {
+        margin-bottom: 16px;
+      }
+    }
+    @media (max-width: 1919px) {
+      margin-right: 19px;
+    }
+    @media (max-width: 1365px) {
+      margin-right: 17px;
+    }
+    @media (max-width: 1023px) {
+      margin-right: 13px;
+    }
+    @media (max-width: 767px) {
+      margin-right: 0;
+    }
+  }
+}

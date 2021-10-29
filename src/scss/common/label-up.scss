@@ -1,0 +1,121 @@
+// .input-container {
+// height: 43px;
+// position: relative;
+// width: 100%;
+// width: calc(50% - 15px);
+// border-bottom: 1px solid #826754;
+// &--w100 {
+//   width: 100%;
+// }
+// &--w100-2 {
+//   @media (max-width: 1919px) {
+//     width: 100%;
+//   }
+//   @media (max-width: 1023px) {
+//     width: calc(50% - 15px);
+//   }
+// }
+// &--mode {
+//   @media (max-width: 1023px) {
+//     width: 30%;
+//   }
+//   input {
+//     @media (max-width: 767px) {
+//       font-size: 16px;
+//     }
+//   }
+// }
+
+//   @media (max-width: 767px) {
+//     width: 100%;
+//     height: 28px;
+//   }
+//   &--comment {
+//     border: 1px solid $colorBrown2;
+//     border-radius: 3px;
+//     height: 100px;
+//     margin-bottom: 20px; //modal
+//     textarea {
+//       resize: none;
+//       height: 100%;
+//     }
+//     @media (max-width: 1919px) {
+//       height: 85px;
+//     }
+//     @media (max-width: 1023px) {
+//       border: 1px solid #826754;
+//       padding: 15px 20px;
+//       width: 100%;
+//       // .placeholder {
+//       //   left: 20px;
+//       // }
+//     }
+//     @media (max-width: 767px) {
+//       height: 85px;
+//       padding: 12px;
+//       // margin-bottom: 35px;
+//       margin-bottom: 16px; //modal
+//     }
+//     // .placeholder {
+//     //   top: 15px;
+//     //   left: 20px;
+//     // }
+//   }
+// }
+
+.ic1 {
+  margin-top: 20px;
+}
+
+// .ic2 {
+//   width: 100%;
+//   margin-top: 20px;
+// }
+
+.cut {
+  height: 20px;
+  left: 0;
+  position: absolute;
+  top: -20px;
+  transform: translateY(0);
+  transition: transform 200ms;
+  font-size: 16px;
+}
+
+.input:focus ~ .cut,
+.input:not(:placeholder-shown) ~ .cut {
+  transform: translateY(8px);
+}
+
+
+.input:not(:placeholder-shown) ~ .placeholder {
+  color: #808097;
+}
+
+.input:focus ~ .placeholder {
+  color: $colorBrown2;
+  left: 0;
+  font-size: 16px;
+}
+
+// .input-container--comment .placeholder {
+//   @media (max-width: 767px) {
+//     font-size: 16px;
+//     top: 12px;
+//     left: 12px;
+//   }
+// }
+
+// .input-container--comment {
+//   .form__label--mode {
+//     // top: 10px !important;
+//     // left: 15px !important;
+//     bottom: auto;
+//     @media (max-width: 767px) {
+//       // left: 10px !important;
+//     }
+//   }
+//   &.ic1 {
+//     margin-top: 40px;
+//   }
+// }

@@ -1,0 +1,96 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header.pug
+
+        .wrapper
+            span.cursor-move
+            .breadcrumbs.container 
+                ul.breadcrumbs__list.content-size3
+                    li 
+                        a(href="index.html") Главная
+                    li 
+                        img(src="img/arrow-breadcrumbs.svg" alt="Стрелка")
+                    li 
+                        a.breadcrumbs__current Статьи
+
+            .articles-page.container.inner 
+                h2.title-inner.title-inner--center Статьи
+                .articles-page__list
+                    a.articles-page__card(href="#")
+                        img.articles-page(src="img/articles/page/img1.png" alt="Превью статьи")
+                        .article-page__footer.card-footer.block-move
+                            .card-footer__col
+                                p.card-footer__date.content-size2 25.07.2021
+                            .card-footer__col  
+                                p.card-footer__name.title-sub Тонкости подбора фурнитуры
+                    a.articles-page__card(href="#")
+                        img.articles-page(src="img/articles/page/img1.png" alt="Превью статьи")
+                        .article-page__footer.card-footer.block-move
+                            .card-footer__col 
+                                p.card-footer__date.content-size2 25.07.2021
+                            .card-footer__col 
+                                p.card-footer__name.title-sub Тонкости подбора фурнитуры
+                    a.articles-page__card(href="#")
+                        img.articles-page(src="img/articles/page/img1.png" alt="Превью статьи")
+                        .article-page__footer.card-footer.block-move
+                            .card-footer__col 
+                                p.card-footer__date.content-size2 25.07.2021
+                            .card-footer__col 
+                                p.card-footer__name.title-sub Тонкости подбора фурнитуры
+                    a.articles-page__card(href="#")
+                        img.articles-page(src="img/articles/page/img1.png" alt="Превью статьи")
+                        .article-page__footer.card-footer.block-move
+                            .card-footer__col 
+                                p.card-footer__date.content-size2 25.07.2021
+                            .card-footer__col 
+                                p.card-footer__name.title-sub Тонкости подбора фурнитуры
+                    a.articles-page__card(href="#")
+                        img.articles-page(src="img/articles/page/img1.png" alt="Превью статьи")
+                        .article-page__footer.card-footer.block-move
+                            .card-footer__col 
+                                p.card-footer__date.content-size2 25.07.2021
+                            .card-footer__col 
+                                p.card-footer__name.title-sub Тонкости подбора фурнитуры
+                    a.articles-page__card(href="#")
+                        img.articles-page(src="img/articles/page/img1.png" alt="Превью статьи")
+                        .article-page__footer.card-footer.block-move
+                            .card-footer__col 
+                                p.card-footer__date.content-size2 25.07.2021
+                            .card-footer__col 
+                                p.card-footer__name.title-sub Тонкости подбора фурнитуры
+                    a.articles-page__card(href="#")
+                        img.articles-page(src="img/articles/page/img1.png" alt="Превью статьи")
+                        .article-page__footer.card-footer.block-move
+                            .card-footer__col 
+                                p.card-footer__date.content-size2 25.07.2021
+                            .card-footer__col 
+                                p.card-footer__name.title-sub Тонкости подбора фурнитуры
+                    a.articles-page__card(href="#")
+                        img.articles-page(src="img/articles/page/img1.png" alt="Превью статьи")
+                        .article-page__footer.card-footer.block-move
+                            .card-footer__col 
+                                p.card-footer__date.content-size2 25.07.2021
+                            .card-footer__col 
+                                p.card-footer__name.title-sub Тонкости подбора фурнитуры
+                    a.articles-page__card(href="#")
+                        img.articles-page(src="img/articles/page/img1.png" alt="Превью статьи")
+                        .article-page__footer.card-footer.block-move
+                            .card-footer__col 
+                                p.card-footer__date.content-size2 25.07.2021
+                            .card-footer__col 
+                                p.card-footer__name.title-sub Тонкости подбора фурнитуры
+
+                    .catalog__item.link__show-more 
+                        button Показать еще
+
+                include blocks/pagination.pug
+
+
+
+
+
+
+        include modules/footer.pug
+        include modules/script.pug

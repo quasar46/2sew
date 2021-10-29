@@ -1,0 +1,63 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header.pug
+
+        .wrapper
+            span.cursor-move
+            .breadcrumbs.container 
+                ul.breadcrumbs__list.content-size3
+                    li 
+                        a(href="index.html") Главная
+                    li 
+                        img(src="img/arrow-breadcrumbs.svg" alt="Стрелка")
+                    li 
+                        a.breadcrumbs__current Корзина
+            .lk-recovery.container.inner
+                .inner__picture 
+                    h2.inner__title Личный кабинет
+                    img(src="img/inner-pictures/lk.png" alt="")
+
+
+                .lk-form
+                    h2.title-sub Регистрация
+                    .lk-form__top.form
+                        .input-container.ic2
+                            input.input(type='text' placeholder=' ')
+                            .cut
+                            label.placeholder(for='') Email
+                        .input-container.ic2
+                            input.input(type='text' placeholder=' ')
+                            .cut
+                            label.placeholder(for='') Имя
+                        .input-container.ic2
+                            input.input(type='text' placeholder=' ')
+                            .cut
+                            label.placeholder(for='') Фамилия
+                        .input-container.ic2
+                            input.input(type='text' placeholder=' ')
+                            .cut
+                            label.placeholder(for='') Номер телефона
+                        .input-container.ic2
+                            input.input(type='text' placeholder=' ')
+                            .cut
+                            label.placeholder(for='') E-mail
+                        .input-container.ic2
+                            input.input(type='password' placeholder=' ')
+                            .cut
+                            label.placeholder(for='') Пароль
+                        .input-container.ic2
+                            input.input(type='password' placeholder=' ')
+                            .cut
+                            label.placeholder(for='') Повторите пароль
+                        p.content-size2.lk__form-text Регистрируясь, вы подтверждаете, что прочли <a href="#" style="text-decoration: underline">лицензионное соглашение</a> и даёте согласие на обработку <a href="#" style="text-decoration: underline">персональных данных</a>
+
+                    .lk-form__bottom
+                        .lk-form__bottom.content-size2
+                            a.btn-round Регистрация <i></i>
+
+
+
+        include modules/footer.pug
+        include modules/script.pug

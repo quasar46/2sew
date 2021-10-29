@@ -1,0 +1,24 @@
+.contacts-list {
+  li {
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+      @media (max-width: 767px) {
+        margin-bottom: 30px;
+      }
+    }
+    @media (max-width: 1023px) {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.contacts-list__caption {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: $colorBrown2;
+  font-weight: 500;
+  @media (max-width: 1919px) {
+    margin-bottom: 8px;
+  }
+}

@@ -1,0 +1,71 @@
+.header 
+    .arrow-up 
+        a(href="#top") 
+            img(src="img/anchor.svg" alt="")
+    .header__message
+        p Скидка 50% на всю фурнитуру до конца августа!
+    .container.header__wrapper
+        a(href="index.html").header__logo.logo.active
+            img(src="img/logo.svg" alt="Логотип")
+        nav.header__nav 
+            a.header__nav-link(href="catalog-main.html") Ткани
+            a.header__nav-link(href="catalog-main.html") Выкройки
+            a.header__nav-link(href="catalog-main.html") Фурнитура
+            a.header__nav-link(href="articles-page.html") Статьи
+            a.header__nav-link(href="ceh.html") Швейный цех
+            a.header__nav-link(href="about.html") О нас
+            a.header__nav-link(href="contacts.html") Контакты
+        //- lcoation
+        .header__location.location 
+            .location__btn
+                img(src="img/language.svg" alt="")
+                span.content-size1 Eng
+            .location__btn.active
+                img(src="img/ru.svg" alt="")
+                span.content-size1 Ру
+        //- burger
+        .header__burger.burger
+            img(src="img/burger.svg" alt="").active
+            img(src="img/closed-modal.svg" alt="")
+        .header__menu.header-menu
+            ul.header-menu__list
+                li
+                    a(href="catalog-main.html").header-menu__item Ткани
+                li
+                    a(href="catalog-main.html").header-menu__item Выкройки
+                li
+                    a(href="catalog-main.html").header-menu__item Фурнитура
+                li
+                    a(href="articles-page.html").header-menu__item Статьи
+                li
+                    a(href="ceh.html").header-menu__item Швейный цех
+                li
+                    a(href="about.html").header-menu__item О нас
+                li
+                    a(href="contacts.html").header-menu__item Контакты
+                    
+            .header__location.location 
+                .location__btn
+                    img(src="img/language.svg" alt="")
+                    span.content-size1 Eng
+                .location__btn.active
+                    img(src="img/ru.svg" alt="")
+                    span.content-size1 Ру
+
+        .header__search
+            input(type="text" placeholder="Поиск") 
+
+        .header__buttons 
+            //- .header__btn.header__btn--glass#searchBtn
+            .header__btn.header__btn--glass
+                a(href="search.html")
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 19.7917C15.4183 19.7917 19 16.0607 19 11.4583C19 6.85596 15.4183 3.125 11 3.125C6.58172 3.125 3 6.85596 3 11.4583C3 16.0607 6.58172 19.7917 11 19.7917Z" stroke="#4D2612"stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M20.9984 21.875L16.6484 17.3438" stroke="#4D2612" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            .header__btn.header__btn--user#user-lk
+                a
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.8346 21.875V19.7917C20.8346 18.6866 20.3956 17.6268 19.6142 16.8454C18.8328 16.064 17.773 15.625 16.668 15.625H8.33463C7.22957 15.625 6.16976 16.064 5.38836 16.8454C4.60696 17.6268 4.16797 18.6866 4.16797 19.7917V21.875" stroke="#4D2612" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.4987 11.4583C14.7999 11.4583 16.6654 9.59285 16.6654 7.29167C16.6654 4.99048 14.7999 3.125 12.4987 3.125C10.1975 3.125 8.33203 4.99048 8.33203 7.29167C8.33203 9.59285 10.1975 11.4583 12.4987 11.4583Z" stroke="#4D2612" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            .header__btn.header__btn--favorite
+                a(href="favorite.html") 
+                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.3804 3.49086L12 4.39932L12.6196 3.49083C13.0333 2.88424 13.4969 2.37299 14.0003 1.96022C14.9892 1.14928 16.0915 0.75 17.2956 0.75C18.9265 0.75 20.4268 1.43876 21.5302 2.70776C22.625 3.96717 23.25 5.71511 23.25 7.64802C23.25 9.59784 22.5735 11.4098 21.0287 13.3863C19.6245 15.1828 17.5922 17.0226 15.1582 19.2221L15.1553 19.2247C14.3307 19.9699 13.3925 20.8177 12.4179 21.7213C12.296 21.8345 12.1471 21.891 12 21.891C11.8529 21.891 11.7043 21.8348 11.5829 21.7221C10.6158 20.8253 9.68356 19.9827 8.86329 19.2414L8.84133 19.2215C6.40764 17.0224 4.37528 15.1828 2.97112 13.3862C1.42643 11.41 0.75 9.59789 0.75 7.64782C0.75 5.71508 1.37497 3.9672 2.46992 2.7078C3.5734 1.43876 5.07347 0.75 6.70441 0.75C7.90847 0.75 9.01088 1.1493 9.99992 1.96022M11.3804 3.49086C10.9665 2.88408 10.5032 2.37301 9.99992 1.96022M11.3804 3.49086L9.99992 1.96022" stroke="#4D2612" stroke-width="1.5"/></svg>
+            .header__btn.header__btn--basket
+                a(href="basket.html") 
+                    <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.25 7.29199H5.75C4.69145 7.29199 3.83333 8.30953 3.83333 9.56472L2.875 21.6859C2.875 22.9411 3.73312 23.9587 4.79167 23.9587H18.2083C19.2669 23.9587 20.125 22.9411 20.125 21.6859L19.1667 9.56472C19.1667 8.30953 18.3085 7.29199 17.25 7.29199Z" stroke="#4D2612" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.66797 9.37467V6.13393C7.66797 5.05956 8.07184 4.02919 8.79073 3.2695C9.50962 2.5098 10.4846 2.08301 11.5013 2.08301C12.518 2.08301 13.493 2.5098 14.2119 3.2695C14.9308 4.02919 15.3346 5.05956 15.3346 6.13393V9.37467" stroke="#4D2612" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>

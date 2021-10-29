@@ -1,0 +1,31 @@
+.location__btn {
+  display: none;
+  cursor: pointer;
+  &.active {
+    display: flex;
+    align-items: center;
+  }
+  img {
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    object-fit: cover;
+    box-shadow: 0px 0px 1px 1px #ccc;
+  }
+  span {
+    margin-left: 10px;
+  }
+  @media (max-width: 1365px) {
+    display: none;
+  }
+  @media (max-width: 767px) {
+    padding-left: 16px;
+  }
+}
+
+.location {
+  @media (max-width: 1365px) {
+    display: none;
+  }
+}
